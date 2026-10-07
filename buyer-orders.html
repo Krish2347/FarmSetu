@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>My Orders | FarmSetu</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="buyer-orders.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">🌱</div>
+
+        <div class="logo-text">
+            <h2>FarmSetu</h2>
+            <p>Buyer Portal</p>
+        </div>
+
+    </a>
+
+
+    <div class="nav-right">
+
+        <div class="notification">
+            🔔
+            <span></span>
+        </div>
+
+
+        <div class="buyer-profile">
+
+            <div class="profile-icon">🏪</div>
+
+            <div class="profile-info">
+                <h4>FreshMart Store</h4>
+                <p>Verified Buyer</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     MAIN LAYOUT
+========================== -->
+
+<div class="dashboard-layout">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <p class="menu-title">BUYER MENU</p>
+
+
+        <a href="buyer-dashboard.html" class="menu-item">
+            <span class="menu-icon">📊</span>
+            Dashboard
+        </a>
+
+
+        <a href="marketplace.html" class="menu-item">
+            <span class="menu-icon">🛒</span>
+            Browse Marketplace
+        </a>
+
+
+        <a href="buyer-requests.html" class="menu-item">
+            <span class="menu-icon">🤝</span>
+            My Requests
+            <span class="request-count">2</span>
+        </a>
+
+
+        <a href="buyer-orders.html" class="menu-item active">
+            <span class="menu-icon">📦</span>
+            My Orders
+        </a>
+
+
+        <a href="saved-products.html" class="menu-item">
+            <span class="menu-icon">♡</span>
+            Saved Products
+        </a>
+
+
+        <div class="menu-divider"></div>
+
+
+        <a href="#" class="menu-item">
+            <span class="menu-icon">👤</span>
+            My Profile
+        </a>
+
+
+        <a href="index.html" class="menu-item logout">
+            <span class="menu-icon">🚪</span>
+            Logout
+        </a>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <p class="small-title">
+                    BUYER ACTIVITY
+                </p>
+
+                <h1>
+                    My Orders
+                </h1>
+
+                <p>
+                    Track your active orders and view your completed
+                    purchases directly from verified farmers.
+                </p>
+
+            </div>
+
+
+            <a href="marketplace.html" class="browse-btn">
+                + Browse Marketplace
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================
+             ORDER SUMMARY
+        ========================== -->
+
+        <section class="summary-grid">
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon all-icon">
+                    📦
+                </div>
+
+                <div>
+                    <p>Total Orders</p>
+                    <h2>18</h2>
+                    <span>All your purchases</span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon preparing-icon">
+                    ⏳
+                </div>
+
+                <div>
+                    <p>Preparing</p>
+                    <h2>2</h2>
+                    <span>Farmer is preparing</span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon ready-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <p>Ready for Pickup</p>
+                    <h2>1</h2>
+                    <span>Available for collection</span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon completed-icon">
+                    ✔
+                </div>
+
+                <div>
+                    <p>Completed</p>
+                    <h2>15</h2>
+                    <span>Successfully received</span>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             FILTER SECTION
+        ========================== -->
+
+        <section class="filter-section">
+
+
+            <div class="filter-tabs">
+
+                <button class="filter-btn active">
+                    All
+                    <span>18</span>
+                </button>
+
+                <button class="filter-btn">
+                    Active
+                    <span>3</span>
+                </button>
+
+                <button class="filter-btn">
+                    Preparing
+                    <span>2</span>
+                </button>
+
+                <button class="filter-btn">
+                    Ready
+                    <span>1</span>
+                </button>
+
+                <button class="filter-btn">
+                    Completed
+                    <span>15</span>
+                </button>
+
+            </div>
+
+
+            <div class="sort-box">
+
+                <label for="sort">
+                    Sort by:
+                </label>
+
+                <select id="sort">
+
+                    <option>
+                        Latest First
+                    </option>
+
+                    <option>
+                        Oldest First
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ORDERS LIST
+        ========================== -->
+
+        <section class="orders-list">
+
+
+            <!-- =========================
+                 ORDER 1 - PREPARING
+            ========================== -->
+
+            <article class="order-card">
+
+
+                <div class="order-top">
+
+
+                    <div class="product-block">
+
+                        <div class="product-image">
+
+                            <img src="Images/wheat.jpeg"
+                                 alt="Premium Quality Wheat">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="category">
+                                GRAINS
+                            </p>
+
+                            <h2>
+                                Premium Quality Wheat
+                            </h2>
+
+                            <p class="farmer">
+                                🌱 Kumar Agro Farms
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-box">
+
+                        <span class="status preparing">
+                            ⏳ Preparing
+                        </span>
+
+                        <p>
+                            Order placed today
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="order-details">
+
+
+                    <div class="detail">
+
+                        <p>Order ID</p>
+                        <h4>#FS1024</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Quantity</p>
+                        <h4>500 kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Total Amount</p>
+                        <h4>₹13,500</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Expected Pickup</p>
+                        <h4>Tomorrow</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="order-footer">
+
+                    <p>
+                        <span>ℹ</span>
+                        The farmer is currently preparing your order.
+                    </p>
+
+
+                    <a href="order-details.html" class="view-btn">
+                        View Order Details →
+                    </a>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =========================
+                 ORDER 2 - READY
+            ========================== -->
+
+            <article class="order-card ready-card">
+
+
+                <div class="order-top">
+
+
+                    <div class="product-block">
+
+                        <div class="product-image">
+
+                            <img src="Images/tomatoes.jpeg"
+                                 alt="Fresh Tomatoes">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="category">
+                                VEGETABLES
+                            </p>
+
+                            <h2>
+                                Fresh Tomatoes
+                            </h2>
+
+                            <p class="farmer">
+                                🌱 Green Valley Farms
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-box">
+
+                        <span class="status ready">
+                            ✓ Ready for Pickup
+                        </span>
+
+                        <p>
+                            Updated today
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="order-details">
+
+
+                    <div class="detail">
+
+                        <p>Order ID</p>
+                        <h4>#FS1018</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Quantity</p>
+                        <h4>250 kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Total Amount</p>
+                        <h4>₹8,000</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Pickup Status</p>
+                        <h4>Ready Now</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="order-footer ready-footer">
+
+                    <p>
+                        <span>✓</span>
+                        Your order is ready. Please coordinate with the farmer for pickup.
+                    </p>
+
+
+                    <a href="order-details.html" class="view-btn ready-btn">
+                        View Pickup Details →
+                    </a>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =========================
+                 ORDER 3 - PREPARING
+            ========================== -->
+
+            <article class="order-card">
+
+
+                <div class="order-top">
+
+
+                    <div class="product-block">
+
+                        <div class="product-image">
+
+                            <img src="Images/potatoes.jpeg"
+                                 alt="Organic Potatoes">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="category">
+                                VEGETABLES
+                            </p>
+
+                            <h2>
+                                Organic Potatoes
+                            </h2>
+
+                            <p class="farmer">
+                                🌱 Sharma Farms
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-box">
+
+                        <span class="status preparing">
+                            ⏳ Preparing
+                        </span>
+
+                        <p>
+                            Order placed yesterday
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="order-details">
+
+
+                    <div class="detail">
+
+                        <p>Order ID</p>
+                        <h4>#FS1021</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Quantity</p>
+                        <h4>300 kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Total Amount</p>
+                        <h4>₹7,500</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Expected Pickup</p>
+                        <h4>30 Aug 2026</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="order-footer">
+
+                    <p>
+                        <span>ℹ</span>
+                        Your order is being prepared by the farmer.
+                    </p>
+
+
+                    <a href="order-details.html" class="view-btn">
+                        View Order Details →
+                    </a>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =========================
+                 ORDER 4 - COMPLETED
+            ========================== -->
+
+            <article class="order-card completed-card">
+
+
+                <div class="order-top">
+
+
+                    <div class="product-block">
+
+                        <div class="product-image">
+
+                            <img src="Images/carrots.jpg"
+                                 alt="Fresh Carrots">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="category">
+                                VEGETABLES
+                            </p>
+
+                            <h2>
+                                Fresh Organic Carrots
+                            </h2>
+
+                            <p class="farmer">
+                                🌱 Fresh Harvest Farm
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-box">
+
+                        <span class="status completed">
+                            ✔ Completed
+                        </span>
+
+                        <p>
+                            Completed 25 Aug 2026
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="order-details">
+
+
+                    <div class="detail">
+
+                        <p>Order ID</p>
+                        <h4>#FS1007</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Quantity</p>
+                        <h4>100 kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Total Amount</p>
+                        <h4>₹4,200</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Order Status</p>
+                        <h4>Successfully Received</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="order-footer completed-footer">
+
+                    <p>
+                        <span>✔</span>
+                        This order has been successfully completed.
+                    </p>
+
+
+                    <a href="order-details.html" class="view-btn completed-btn">
+                        View Order →
+                    </a>
+
+                </div>
+
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             INFORMATION BOX
+        ========================== -->
+
+        <section class="info-section">
+
+
+            <div class="info-icon">
+                🚜
+            </div>
+
+
+            <div class="info-text">
+
+                <h3>
+                    Buying directly makes a difference
+                </h3>
+
+                <p>
+                    Every order through FarmSetu connects you directly with farmers,
+                    helping reduce unnecessary intermediaries and supporting better
+                    earnings for producers.
+                </p>
+
+            </div>
+
+
+            <a href="marketplace.html">
+                Browse More →
+            </a>
+
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            © 2026 FarmSetu · Connecting Farmers Directly with Buyers
+        </footer>
+
+
+    </main>
+
+
+</div>
+```
+
+</body>
+
+</html>

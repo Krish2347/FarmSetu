@@ -1,0 +1,1008 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+
+    background-color: #fffdf8;
+
+    color: #1f2933;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: #fffdf8;
+
+    border-bottom: 1px solid #edf0ea;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+}
+
+
+.logo-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    border: 1px solid #b8d3b9;
+
+    border-radius: 50%;
+
+    background-color: #f1f7ee;
+}
+
+
+.logo-text h2 {
+    color: #245c32;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.logo-text p {
+    color: #68736b;
+
+    font-size: 12px;
+}
+
+
+/* BACK HOME */
+
+.back-home {
+    padding: 11px 18px;
+
+    text-decoration: none;
+
+    border: 1px solid #cddbcc;
+
+    border-radius: 8px;
+
+    color: #245c32;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.back-home:hover {
+    background-color: #eaf4ea;
+}
+
+
+/* =========================
+   MAIN AUTH SECTION
+========================= */
+
+.auth-section {
+    min-height: calc(100vh - 90px);
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+}
+
+
+/* =========================
+   LEFT BANNER
+========================= */
+
+.auth-banner {
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 80px 12%;
+
+    /* background:
+        linear-gradient(
+            135deg,
+            #1d4f2a,
+            #326f40
+        ); */
+
+        background:
+        linear-gradient(
+            135deg,
+            #1a4b24,
+            #6cb36c
+        );
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circles */
+
+.auth-banner::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    border: 70px solid
+        rgba(255, 255, 255, 0.04);
+
+    top: -170px;
+    right: -170px;
+}
+
+
+.auth-banner::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    border: 55px solid
+        rgba(255, 255, 255, 0.04);
+
+    bottom: -160px;
+    left: -130px;
+}
+
+
+/* BANNER CONTENT */
+
+.banner-content {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.small-heading {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    margin-bottom: 25px;
+
+    border-radius: 20px;
+
+    background-color:
+        rgba(255, 255, 255, 0.12);
+
+    color: #e2f0df;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+
+.auth-banner h1 {
+    max-width: 500px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    margin-bottom: 22px;
+}
+
+
+.auth-banner h1 span {
+    color: #dceebc;
+
+    display: block;
+}
+
+
+.banner-description {
+    max-width: 470px;
+
+    color: #dce8dd;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+.benefit {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color:
+        rgba(255, 255, 255, 0.12);
+
+    font-size: 23px;
+}
+
+
+.benefit h3 {
+    margin-bottom: 5px;
+
+    font-size: 15px;
+}
+
+
+.benefit p {
+    color: #d5e4d6;
+
+    font-size: 13px;
+}
+
+
+/* BANNER FOOTER */
+
+.banner-footer {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 450px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid
+        rgba(255, 255, 255, 0.2);
+}
+
+
+.banner-footer p {
+    color: #dce8dd;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RIGHT AUTH CONTAINER
+========================= */
+
+.auth-container {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 70px 8%;
+
+    background-color: #fffdf8;
+}
+
+
+/* AUTH BOX */
+
+.auth-box {
+    width: 100%;
+
+    max-width: 520px;
+}
+
+
+/* =========================
+   AUTH HEADING
+========================= */
+
+.auth-heading {
+    margin-bottom: 30px;
+}
+
+
+.auth-heading h2 {
+    margin-bottom: 8px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #1f3d27;
+
+    font-size: 36px;
+}
+
+
+.auth-heading p {
+    color: #7b857c;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.auth-tabs {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid #e1e8de;
+}
+
+
+.tab {
+    padding: 13px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #7a837c;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    position: relative;
+    cursor: pointer;
+}
+
+#register{
+  display: none;
+}
+
+/* .tab.active{
+    transition: 1s ease;
+    border-bottom: 2px solid #245c32;
+} */
+
+
+/* .active-tab {
+    color: #245c32;
+} */
+
+
+.tab::after {
+    content: "";
+
+    position: absolute;
+
+    height: 3px;
+
+    background-color: #245c32;
+
+    left: 0;
+    right: 0;
+    width: 0;
+
+    bottom: -1px;
+    transition: 0.3s ease-in-out;
+
+    border-radius: 5px;
+}
+.tab.active::after{
+    width: 100%;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #3d4a40;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 15px;
+
+    border: 1px solid #dce5da;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background-color: #fff;
+
+    color: #3d4a40;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+#login{
+    display: none;
+}
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2f6b3b;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(47, 107, 59, 0.08);
+}
+
+
+.form-group input::placeholder {
+    color: #a2aaa4;
+}
+
+
+/* PASSWORD BOX */
+
+.password-box {
+    position: relative;
+}
+
+
+.password-box input {
+    padding-right: 45px;
+}
+
+
+.password-box span {
+    position: absolute;
+
+    top: 50%;
+    right: 15px;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   FORM OPTIONS
+========================= */
+
+.form-options {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin: -3px 0 25px;
+}
+
+
+.remember {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #69736b;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+.remember input {
+    accent-color: #245c32;
+}
+
+
+.form-options a {
+    color: #2f6b3b;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MAIN AUTH BUTTON
+========================= */
+
+.auth-btn {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #245c32;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.auth-btn:hover {
+    background-color: #183f22;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 32px 0;
+}
+
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background-color: #e2e8df;
+}
+
+
+.divider span {
+    color: #9aa39c;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   ROLE OPTIONS
+========================= */
+
+.role-heading {
+    margin-bottom: 15px;
+
+    color: #69736b;
+
+    font-size: 13px;
+}
+
+
+.role-options {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+}
+
+
+.role-card {
+    position: relative;
+
+    display: block;
+
+    padding: 18px;
+
+    text-decoration: none;
+
+    border: 1px solid #dfe8dc;
+
+    border-radius: 12px;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+
+.role-card:hover {
+    border-color: #2f6b3b;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 20px
+        rgba(36, 92, 50, 0.08);
+}
+
+
+.role-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    border-radius: 9px;
+
+    background-color: #eaf4ea;
+
+    font-size: 20px;
+}
+
+
+.role-card h3 {
+    margin-bottom: 5px;
+
+    color: #2f4033;
+
+    font-size: 14px;
+}
+
+
+.role-card p {
+    max-width: 160px;
+
+    color: #7c867e;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.arrow {
+    position: absolute;
+
+    right: 15px;
+    top: 20px;
+
+    color: #2f6b3b;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   REGISTER SECTION
+========================= */
+
+.register-section {
+    margin-top: 70px;
+
+    padding-top: 45px;
+
+    border-top: 1px solid #dfe7dc;
+}
+
+
+.register-heading {
+    margin-bottom: 25px;
+}
+
+
+.register-heading h2 {
+    margin-bottom: 7px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #1f3d27;
+
+    font-size: 30px;
+}
+
+
+.register-heading p {
+    color: #7b857c;
+
+    font-size: 13px;
+}
+
+
+/* TERMS */
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin-bottom: 22px;
+
+    color: #68736b;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.terms input {
+    margin-top: 2px;
+
+    accent-color: #245c32;
+}
+
+
+/* =========================
+   HELP TEXT
+========================= */
+
+.help-text {
+    margin-top: 30px;
+
+    color: #879087;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+
+.help-text a {
+    color: #2f6b3b;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    .auth-section {
+        grid-template-columns: 40% 60%;
+    }
+
+
+    .auth-banner {
+        padding: 60px 10%;
+    }
+
+
+    .auth-banner h1 {
+        font-size: 42px;
+    }
+
+
+    .auth-container {
+        padding: 60px 7%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .auth-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .auth-banner {
+        min-height: auto;
+
+        padding: 60px 10%;
+    }
+
+
+    .banner-footer {
+        display: none;
+    }
+
+
+    .auth-container {
+        padding: 60px 8%;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar {
+        height: 75px;
+
+        padding: 0 5%;
+    }
+
+
+    .logo-icon {
+        width: 45px;
+        height: 45px;
+
+        font-size: 21px;
+    }
+
+
+    .logo-text h2 {
+        font-size: 21px;
+    }
+
+
+    .logo-text p {
+        display: none;
+    }
+
+
+    .back-home {
+        padding: 9px 12px;
+
+        font-size: 12px;
+    }
+
+
+    .auth-section {
+        min-height: calc(100vh - 75px);
+    }
+
+
+    .auth-banner {
+        padding: 50px 7%;
+    }
+
+
+    .auth-banner h1 {
+        font-size: 36px;
+    }
+
+
+    .banner-description {
+        font-size: 14px;
+    }
+
+
+    .benefit p {
+        font-size: 11px;
+    }
+
+
+    .auth-container {
+        padding: 45px 6%;
+    }
+
+
+    .auth-heading h2 {
+        font-size: 30px;
+    }
+
+
+    .role-options {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-options {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+}
+.dashboard-login {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}

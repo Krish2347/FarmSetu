@@ -1,0 +1,1076 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+
+    background-color: #f6f8f4;
+
+    color: #2d3d31;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: #fffdf8;
+
+    border-bottom: 1px solid #e2e9df;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+}
+
+
+.logo-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #edf6ea;
+
+    border: 1px solid #c8ddc7;
+
+    font-size: 22px;
+}
+
+
+.logo-text h2 {
+    color: #245c32;
+
+    font-size: 23px;
+}
+
+
+.logo-text p {
+    margin-top: 2px;
+
+    color: #8a948c;
+
+    font-size: 11px;
+}
+
+
+/* NAV RIGHT */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.dashboard-link {
+    color: #2b6237;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.dashboard-link:hover {
+    text-decoration: underline;
+}
+
+
+/* FARMER PROFILE */
+
+.farmer-profile {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding-left: 22px;
+
+    border-left: 1px solid #e1e8de;
+}
+
+
+.profile-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #eaf4e7;
+
+    font-size: 20px;
+}
+
+
+.farmer-profile h4 {
+    margin-bottom: 3px;
+
+    color: #35463a;
+
+    font-size: 13px;
+}
+
+
+.farmer-profile p {
+    color: #849087;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.add-product-page {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 55px 5% 25px;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 42px;
+}
+
+
+.small-title {
+    margin-bottom: 10px;
+
+    color: #6e9075;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+
+.page-header h1 {
+    margin-bottom: 10px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #1e4027;
+
+    font-size: 39px;
+}
+
+
+.page-header > div:first-child > p:last-child {
+    color: #7e8980;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+.steps {
+    display: flex;
+    align-items: center;
+
+    color: #9aa39b;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+.step {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.step span {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #e5e9e3;
+
+    color: #879087;
+
+    font-size: 10px;
+}
+
+
+.step.active {
+    color: #2d6639;
+}
+
+
+.step.active span {
+    background-color: #2d6639;
+
+    color: white;
+}
+
+
+.step-line {
+    width: 35px;
+    height: 1px;
+
+    margin: 0 9px;
+
+    background-color: #dce3d9;
+}
+
+
+/* =========================
+   FORM LAYOUT
+========================= */
+
+.form-layout {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.75fr);
+
+    gap: 25px;
+}
+
+
+.form-left,
+.form-right {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.form-card {
+    padding: 28px;
+
+    background-color: white;
+
+    border: 1px solid #e2e9df;
+
+    border-radius: 15px;
+}
+
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.card-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 27px;
+}
+
+
+.heading-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #eef6eb;
+
+    font-size: 19px;
+}
+
+
+.card-heading h2 {
+    margin-bottom: 5px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #2a4431;
+
+    font-size: 22px;
+}
+
+
+.card-heading p {
+    color: #8a948c;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #465449;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.form-group label span {
+    color: #c75c4d;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #dce5da;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background-color: #fff;
+
+    color: #3b4a3e;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    transition: 0.25s;
+}
+
+
+.form-group input,
+.form-group select {
+    height: 50px;
+
+    padding: 0 14px;
+}
+
+
+.form-group textarea {
+    height: 120px;
+
+    padding: 14px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2f6b3b;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(47, 107, 59, 0.08);
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a2aaa4;
+}
+
+
+/* =========================
+   COLUMNS
+========================= */
+
+.two-column {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.three-column {
+    display: grid;
+
+    grid-template-columns: 1fr 0.8fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* =========================
+   PRICE INPUT
+========================= */
+
+.price-input {
+    position: relative;
+}
+
+
+.price-input > span {
+    position: absolute;
+
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+
+    color: #68766b;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.price-input input {
+    padding-left: 35px;
+}
+
+
+/* =========================
+   HARVEST DATE
+========================= */
+
+.harvest-group {
+    max-width: 300px;
+
+    margin-bottom: 0;
+}
+
+
+.input-note {
+    margin-top: 7px;
+
+    color: #929b93;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   UPLOAD BOX
+========================= */
+
+.upload-box {
+    min-height: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    border: 2px dashed #cbdac8;
+
+    border-radius: 12px;
+
+    background-color: #fbfdf9;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.upload-box:hover {
+    border-color: #4d8757;
+
+    background-color: #f5f9f2;
+}
+
+
+.upload-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 13px;
+
+    border-radius: 50%;
+
+    background-color: #eaf4e7;
+
+    font-size: 25px;
+}
+
+
+.upload-box h3 {
+    margin-bottom: 7px;
+
+    color: #3d4d40;
+
+    font-size: 14px;
+}
+
+
+.upload-box p {
+    margin-bottom: 6px;
+
+    color: #89938b;
+
+    font-size: 11px;
+}
+
+
+.upload-box > span {
+    color: #a0a8a0;
+
+    font-size: 9px;
+}
+
+
+/* BROWSE BUTTON */
+
+.browse-btn {
+    margin-top: 17px;
+
+    padding: 9px 17px;
+
+    border: 1px solid #bcd1ba;
+
+    border-radius: 7px;
+
+    background-color: white;
+
+    color: #2c6638;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   LOCATION CARD
+========================= */
+
+.location-info {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    padding: 12px;
+
+    margin-top: 5px;
+
+    border-radius: 8px;
+
+    background-color: #f3f7f1;
+}
+
+
+.location-info span {
+    font-size: 12px;
+}
+
+
+.location-info p {
+    color: #7d887f;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CHECK OPTIONS
+========================= */
+
+.check-option {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #edf1eb;
+
+    cursor: pointer;
+}
+
+
+.check-option:last-child {
+    border-bottom: none;
+}
+
+
+.check-option input {
+    width: 16px;
+    height: 16px;
+
+    margin-top: 2px;
+
+    accent-color: #2d6639;
+
+    cursor: pointer;
+}
+
+
+.check-option strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #455349;
+
+    font-size: 12px;
+}
+
+
+.check-option p {
+    color: #8a948c;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   TIPS CARD
+========================= */
+
+.tips-card {
+    display: flex;
+
+    gap: 12px;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    background-color: #eef6ea;
+
+    border: 1px solid #dce9d8;
+}
+
+
+.tips-icon {
+    font-size: 21px;
+}
+
+
+.tips-card h3 {
+    margin-bottom: 9px;
+
+    color: #36523d;
+
+    font-size: 12px;
+}
+
+
+.tips-card ul {
+    padding-left: 15px;
+
+    color: #6f7d72;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   FORM ACTIONS
+========================= */
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 30px;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #e0e7dd;
+}
+
+
+/* CANCEL BUTTON */
+
+.cancel-btn {
+    padding: 12px 20px;
+
+    color: #7a857c;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* RIGHT ACTIONS */
+
+.action-right {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+/* DRAFT */
+
+.draft-btn {
+    padding: 12px 20px;
+
+    border: 1px solid #cbd8c8;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: #35623e;
+
+    font-family: inherit;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.draft-btn:hover {
+    background-color: #f1f6ef;
+}
+
+
+/* PUBLISH */
+
+.publish-btn {
+    padding: 13px 23px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #245c32;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.publish-btn span {
+    margin-left: 7px;
+
+    font-size: 15px;
+}
+
+
+.publish-btn:hover {
+    background-color: #193f23;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 25px;
+
+    padding: 20px 0;
+
+    text-align: center;
+
+    border-top: 1px solid #e1e8de;
+}
+
+
+footer p {
+    color: #9aa39b;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1050px) {
+
+    .form-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-right {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .tips-card {
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+
+    .page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .steps {
+        margin-top: 10px;
+    }
+
+
+    .farmer-profile div:last-child {
+        display: none;
+    }
+
+
+    .farmer-profile {
+        padding-left: 12px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 70px;
+    }
+
+
+    .logo-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .logo-text h2 {
+        font-size: 20px;
+    }
+
+
+    .nav-right {
+        gap: 12px;
+    }
+
+
+    .dashboard-link {
+        font-size: 11px;
+    }
+
+
+    .add-product-page {
+        padding: 35px 5% 20px;
+    }
+
+
+    .page-header h1 {
+        font-size: 31px;
+    }
+
+
+    .steps {
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+
+    .form-card {
+        padding: 20px;
+    }
+
+
+    .two-column,
+    .three-column {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-right {
+        display: flex;
+    }
+
+
+    .tips-card {
+        grid-column: auto;
+    }
+
+
+    .form-actions {
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+
+    .action-right {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .cancel-btn {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .logo-text p {
+        display: none;
+    }
+
+
+    .profile-icon {
+        width: 36px;
+        height: 36px;
+
+        font-size: 17px;
+    }
+
+
+    .dashboard-link {
+        font-size: 10px;
+    }
+
+
+    .steps {
+        font-size: 9px;
+    }
+
+
+    .step-line {
+        width: 15px;
+
+        margin: 0 5px;
+    }
+
+
+    .card-heading h2 {
+        font-size: 19px;
+    }
+
+
+    .action-right {
+        grid-template-columns: 1fr;
+    }
+
+}

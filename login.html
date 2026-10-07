@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | FarmSetu</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="sign.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-icon">
+                🌱
+            </div>
+
+            <div class="logo-text">
+
+                <h2>FarmSetu</h2>
+
+                <p>From Farm to Market</p>
+
+            </div>
+
+        </a>
+
+
+        <!-- Back to Home -->
+
+        <a href="index.html" class="back-home">
+
+            ← Back to Home
+
+        </a>
+
+
+    </nav>
+
+
+
+    <!-- =========================
+         MAIN LOGIN SECTION
+    ========================== -->
+
+    <main class="auth-section">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="auth-banner">
+
+
+            <div class="banner-content">
+
+                <p class="small-heading">
+                    🌾 FARMSETU COMMUNITY
+                </p>
+
+
+                <h1>
+                    Connecting Farms
+                    <span>With Opportunities.</span>
+                </h1>
+
+
+                <p class="banner-description">
+
+                    Join FarmSetu and become part of a transparent
+                    marketplace where farmers and buyers connect directly.
+
+                </p>
+
+
+                <!-- Benefits -->
+
+                <div class="benefits">
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            👨‍🌾
+                        </div>
+
+                        <div>
+
+                            <h3>For Farmers</h3>
+
+                            <p>
+                                Reach more buyers and get better prices.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            🛒
+                        </div>
+
+                        <div>
+
+                            <h3>For Buyers</h3>
+
+                            <p>
+                                Buy fresh produce directly from farmers.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>Transparent & Fair</h3>
+
+                            <p>
+                                Clear information and direct communication.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Bottom Quote -->
+
+            <div class="banner-footer">
+
+                <p>
+                    "Better connections. Fairer markets.
+                    Stronger farming communities."
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             RIGHT SIDE
+             AUTHENTICATION FORM
+        ========================== -->
+
+        <div class="auth-container">
+
+
+            <!-- LOGIN / REGISTER BOX -->
+
+            <div class="auth-box">
+
+
+                <!-- Heading -->
+
+                <div class="auth-heading">
+
+                    <h2>
+                        Welcome to FarmSetu
+                    </h2>
+
+                    <p>
+                        Login to continue your journey with us.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Tabs -->
+
+                <div class="auth-tabs">
+
+                    <a class="tab login-tab active" id="login-tab">
+
+                        Login
+
+                    </a>
+
+<!-- register-tab -->
+                    <a class="tab register-tab" id="register-tab">
+
+                        Register
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =========================
+                     LOGIN FORM
+                ========================== -->
+
+                <form class="login-form"
+                      id="login-form">
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+
+                            Email Address
+
+                        </label>
+
+
+                        <input
+                            type="email"
+                            id="l_email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                I want to join as
+
+                            </label>
+
+
+                            <select id="account-type-log" required>
+
+                                <option value="" selected disabled>
+                                    Select Account Type
+                                </option>
+
+                                <option value="farmer">
+                                    Farmer
+                                </option>
+
+                                <option value="buyer">
+                                    Buyer
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+
+                            Password
+
+                        </label>
+
+
+                        <div class="password-box">
+
+                            <input
+                                type="password"
+                                id="l_password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                            <span id="password-view">
+                                👁
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Remember / Forgot -->
+
+                    <div class="form-options">
+
+                        <label class="remember">
+
+                            <input type="checkbox">
+
+                            Remember me
+
+                        </label>
+
+
+                        <a href="#">
+
+                            Forgot Password?
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Login Button -->
+
+                    <button class="auth-btn dashboard-login" type="submit">
+                     Login to FarmSetu →
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- Divider -->
+
+                <!-- <div class="divider">
+
+                    <span>
+                        OR
+                    </span>
+
+                </div> -->
+
+
+
+                <!-- Role Selection -->
+
+                <!-- <p class="role-heading">
+
+                    New to FarmSetu? Choose how you want to join.
+
+                </p>
+
+
+                <div class="role-options"> -->
+
+
+                    <!-- Farmer -->
+
+                    <!-- <a href="#register"
+                       class="role-card">
+
+                        <div class="role-icon">
+                            👨‍🌾
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Join as Farmer
+                            </h3>
+
+                            <p>
+                                Sell your produce directly.
+                            </p>
+
+                        </div>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </a> -->
+
+
+
+                    <!-- Buyer -->
+
+                    <!-- <a href="#register"
+                       class="role-card">
+
+                        <div class="role-icon">
+                            🛒
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Join as Buyer
+                            </h3>
+
+                            <p>
+                                Discover fresh farm produce.
+                            </p>
+
+                        </div>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                </div> -->
+
+
+
+                <!-- Register Form -->
+
+                <div class="register-section"
+                     id="register">
+
+
+                    <div class="register-heading">
+
+                        <h2>
+                            Create Your Account
+                        </h2>
+
+                        <p>
+                            Join FarmSetu today.
+                        </p>
+
+                    </div>
+
+
+                    <form class="register-form" id="register-form">
+
+
+                        <!-- Full Name -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Full Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter your full name" id="r_name" required>
+
+                        </div>
+
+
+
+                        <!-- Mobile Number -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Mobile Number +91
+
+                            </label>
+
+                            <input
+                                type="tel"
+                                placeholder="Enter your mobile number" id="r_number" required type="number">
+
+                        </div>
+
+
+
+                        <!-- Register Email -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Email Address
+
+                            </label>
+
+                            <input
+                                type="email"
+                                placeholder="Enter your email" id="r_email" required>
+
+                        </div>
+
+
+
+                        <!-- Account Type -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                I want to join as
+
+                            </label>
+
+
+                            <select id="account-type-reg" required>
+
+                                <option value="" selected disabled>
+                                    Select Account Type
+                                </option>
+
+                                <option value="farmer">
+                                    Farmer
+                                </option>
+
+                                <option value="buyer">
+                                    Buyer
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- Password -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Create Password
+
+                            </label>
+
+                            <input
+                                type="password"
+                                placeholder="Create a password" id="r_password" required>
+                                <span id="r_password-view">
+                                👁
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Terms -->
+
+                        <label class="terms">
+
+                            <input type="checkbox" id="terms" required>
+
+                            I agree to the Terms & Conditions
+                            and Privacy Policy.
+
+                        </label>
+
+
+
+                        <!-- Register Button -->
+
+                        <button type="submit"
+                                class="auth-btn">
+
+                            Create Account →
+
+                        </button>
+
+
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Bottom Text -->
+
+            <p class="help-text">
+
+                Need help?
+
+                <a href="#">
+                    Contact FarmSetu Support
+                </a>
+
+            </p>
+
+
+        </div>
+
+
+    </main>
+
+
+</body>
+<script src="styling.js"></script>
+<script src="sign.js" type="module"></script>
+</html>

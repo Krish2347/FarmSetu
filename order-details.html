@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Order Details | FarmSetu</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="order-details.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            🌱
+        </div>
+
+        <div class="logo-text">
+            <h2>FarmSetu</h2>
+            <p>Farmer Portal</p>
+        </div>
+
+    </a>
+
+
+    <div class="nav-right">
+
+        <div class="notification">
+            🔔
+            <span></span>
+        </div>
+
+
+        <div class="farmer-profile">
+
+            <div class="profile-icon">
+                👨‍🌾
+            </div>
+
+            <div class="profile-info">
+                <h4>Rajesh Kumar</h4>
+                <p>Verified Farmer</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     MAIN LAYOUT
+========================== -->
+
+<div class="dashboard-layout">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <p class="menu-title">FARMER MENU</p>
+
+
+        <a href="farmer-dashboard.html" class="menu-item">
+            <span class="menu-icon">📊</span>
+            Dashboard
+        </a>
+
+
+        <a href="my-products.html" class="menu-item">
+            <span class="menu-icon">📦</span>
+            My Products
+        </a>
+
+
+        <a href="add-product.html" class="menu-item">
+            <span class="menu-icon">➕</span>
+            Add Product
+        </a>
+
+
+        <a href="buyer-requests.html" class="menu-item">
+            <span class="menu-icon">🤝</span>
+            Buyer Requests
+            <span class="request-count">4</span>
+        </a>
+
+
+        <a href="orders.html" class="menu-item active">
+            <span class="menu-icon">📋</span>
+            My Orders
+        </a>
+
+
+        <div class="menu-divider"></div>
+
+
+        <a href="#" class="menu-item">
+            <span class="menu-icon">👤</span>
+            My Profile
+        </a>
+
+
+        <a href="index.html" class="menu-item logout">
+            <span class="menu-icon">🚪</span>
+            Logout
+        </a>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- BACK BUTTON -->
+
+        <a href="orders.html" class="back-btn">
+            ← Back to My Orders
+        </a>
+
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <p class="small-title">
+                    ORDER DETAILS
+                </p>
+
+                <h1>
+                    Order #FS1024
+                </h1>
+
+                <p class="order-date">
+                    Order received on 29 August 2026, 10:30 AM
+                </p>
+
+            </div>
+
+
+            <div class="header-status">
+
+                <span class="status-dot"></span>
+
+                <div>
+                    <p>Current Status</p>
+                    <h3>Preparing Order</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ORDER PROGRESS
+        ========================== -->
+
+        <section class="progress-section">
+
+            <h2>Order Progress</h2>
+
+
+            <div class="progress-tracker">
+
+
+                <div class="tracker-item completed">
+
+                    <div class="tracker-circle">
+                        ✓
+                    </div>
+
+                    <div class="tracker-text">
+                        <h4>Order Confirmed</h4>
+                        <p>29 Aug, 10:35 AM</p>
+                    </div>
+
+                </div>
+
+
+                <div class="tracker-line active-line"></div>
+
+
+                <div class="tracker-item active">
+
+                    <div class="tracker-circle">
+                        2
+                    </div>
+
+                    <div class="tracker-text">
+                        <h4>Preparing</h4>
+                        <p>Order is being prepared</p>
+                    </div>
+
+                </div>
+
+
+                <div class="tracker-line"></div>
+
+
+                <div class="tracker-item">
+
+                    <div class="tracker-circle">
+                        3
+                    </div>
+
+                    <div class="tracker-text">
+                        <h4>Ready for Pickup</h4>
+                        <p>Waiting for preparation</p>
+                    </div>
+
+                </div>
+
+
+                <div class="tracker-line"></div>
+
+
+                <div class="tracker-item">
+
+                    <div class="tracker-circle">
+                        4
+                    </div>
+
+                    <div class="tracker-text">
+                        <h4>Completed</h4>
+                        <p>Order delivered successfully</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DETAILS GRID
+        ========================== -->
+
+        <div class="details-grid">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="left-column">
+
+
+                <!-- PRODUCT DETAILS -->
+
+                <section class="detail-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <p class="section-label">
+                                PRODUCT
+                            </p>
+
+                            <h2>
+                                Product Details
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <div class="product-image">
+
+                            <img src="Images/wheat.jpeg"
+                                 alt="Premium Quality Wheat">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <h3>
+                                Premium Quality Wheat
+                            </h3>
+
+                            <p>
+                                Grade A · Fresh Farm Produce
+                            </p>
+
+                            <span>
+                                🌾 Wheat
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-data">
+
+                        <div class="data-item">
+                            <p>Quantity</p>
+                            <strong>500 kg</strong>
+                        </div>
+
+                        <div class="data-item">
+                            <p>Agreed Price</p>
+                            <strong>₹27 / kg</strong>
+                        </div>
+
+                        <div class="data-item">
+                            <p>Total Amount</p>
+                            <strong class="total-amount">
+                                ₹13,500
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- DELIVERY DETAILS -->
+
+                <section class="detail-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <p class="section-label">
+                                LOGISTICS
+                            </p>
+
+                            <h2>
+                                Delivery Details
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="delivery-list">
+
+
+                        <div class="delivery-item">
+
+                            <div class="delivery-icon">
+                                📅
+                            </div>
+
+                            <div>
+                                <p>Expected Pickup Date</p>
+                                <h4>30 August 2026</h4>
+                            </div>
+
+                        </div>
+
+
+                        <div class="delivery-item">
+
+                            <div class="delivery-icon">
+                                📍
+                            </div>
+
+                            <div>
+                                <p>Pickup Location</p>
+                                <h4>Farm, Meerut, Uttar Pradesh</h4>
+                            </div>
+
+                        </div>
+
+
+                        <div class="delivery-item">
+
+                            <div class="delivery-icon">
+                                🚚
+                            </div>
+
+                            <div>
+                                <p>Delivery Method</p>
+                                <h4>Buyer Pickup</h4>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- PAYMENT DETAILS -->
+
+                <section class="detail-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <p class="section-label">
+                                PAYMENT
+                            </p>
+
+                            <h2>
+                                Payment Details
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-box">
+
+                        <div>
+
+                            <p>Payment Status</p>
+
+                            <span class="payment-status">
+                                Pending
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <p>Payment Method</p>
+
+                            <h4>
+                                Direct Bank Transfer
+                            </h4>
+
+                        </div>
+
+
+                        <div>
+
+                            <p>Total Payable</p>
+
+                            <h3>
+                                ₹13,500
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="right-column">
+
+
+                <!-- BUYER DETAILS -->
+
+                <section class="detail-card buyer-card">
+
+                    <p class="section-label">
+                        BUYER INFORMATION
+                    </p>
+
+                    <h2>
+                        Buyer Details
+                    </h2>
+
+
+                    <div class="buyer-profile">
+
+                        <div class="buyer-avatar">
+                            FM
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                FreshMart Store
+                            </h3>
+
+                            <p>
+                                Verified Buyer
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="buyer-information">
+
+                        <div>
+                            <span>👤</span>
+
+                            <div>
+                                <p>Contact Person</p>
+                                <h4>Amit Sharma</h4>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span>📍</span>
+
+                            <div>
+                                <p>Location</p>
+                                <h4>Delhi, India</h4>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span>📞</span>
+
+                            <div>
+                                <p>Contact Number</p>
+                                <h4>+91 XXXXX XXXXX</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <button class="contact-btn">
+                        💬 Contact Buyer
+                    </button>
+
+                </section>
+
+
+
+                <!-- ACTION CARD -->
+
+                <section class="action-card">
+
+                    <div class="action-icon">
+                        📦
+                    </div>
+
+                    <h2>
+                        Update Order Status
+                    </h2>
+
+                    <p>
+                        Keep the buyer informed by updating
+                        the progress of this order.
+                    </p>
+
+
+                    <button class="primary-btn">
+                        Mark as Ready for Pickup
+                    </button>
+
+
+                    <button class="secondary-btn">
+                        Report an Issue
+                    </button>
+
+                </section>
+
+
+
+                <!-- HELP CARD -->
+
+                <section class="help-card">
+
+                    <span>
+                        💡
+                    </span>
+
+                    <div>
+
+                        <h4>
+                            Need help?
+                        </h4>
+
+                        <p>
+                            Contact FarmSetu support for
+                            assistance with this order.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            © 2026 FarmSetu · Empowering Farmers Through Direct Markets
+        </footer>
+
+
+    </main>
+
+
+</div>
+```
+
+</body>
+
+</html>

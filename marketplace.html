@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FarmSetu | Marketplace</title>
+
+    <link rel="stylesheet" href="marketplace.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="market-navbar">
+
+        <div class="market-logo">
+            <span>🌱</span>
+            FarmSetu
+        </div>
+
+        <div class="market-nav-links">
+            <a href="index.html">Home</a>
+            <!-- <a href="marketplace.html" class="active">Marketplace</a>
+            <a href="index.html#price-insight">Price Insights</a>
+            <a href="index.html#about-us">About Us</a> -->
+        </div>
+
+        <div class="market-nav-actions">
+            <a href="login.html" class="login-link">Login</a>
+            <a href="login.html" class="nav-join-btn">Join FarmSetu</a>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= MARKETPLACE HERO ================= -->
+
+    <section class="market-hero">
+
+        <div class="market-hero-content">
+
+            <p class="market-tag">FARMSETU MARKETPLACE</p>
+
+            <h1>
+                Fresh Produce.
+                <span>Directly From Farms.</span>
+            </h1>
+
+            <p>
+                Discover quality agricultural products directly from farmers.
+                Compare prices, explore produce and connect without unnecessary
+                intermediaries.
+            </p>
+
+            <!-- Search -->
+
+            <div class="market-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search for tomatoes, wheat, potatoes..."
+                >
+
+                <button>Search</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MARKETPLACE CONTENT ================= -->
+
+    <main class="marketplace-container">
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-tag">EXPLORE PRODUCE</p>
+                    <h2>Shop by Category</h2>
+                </div>
+
+                <a href="#">View All →</a>
+
+            </div>
+
+
+            <div class="category-list">
+
+                <div class="category-card active-category">
+                    <div class="category-icon">🌾</div>
+                    <h3>All Produce</h3>
+                    <p>120+ Products</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🍅</div>
+                    <h3>Vegetables</h3>
+                    <p>45 Products</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🌾</div>
+                    <h3>Grains</h3>
+                    <p>28 Products</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🥕</div>
+                    <h3>Organic</h3>
+                    <p>24 Products</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🍎</div>
+                    <h3>Fruits</h3>
+                    <p>23 Products</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS AREA ================= -->
+
+        <section class="products-section">
+
+            <!-- Top Bar -->
+
+            <div class="products-top">
+
+                <div>
+                    <p class="section-tag">DIRECT FROM FARMERS</p>
+
+                    <h2>
+                        Fresh on the Marketplace
+                    </h2>
+
+                    <p class="products-description">
+                        Browse produce listed by verified farmers.
+                    </p>
+                </div>
+
+
+                <div class="sort-box">
+
+                    <label for="sort">Sort by</label>
+
+                    <select id="sort">
+                        <option>Recommended</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest First</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="market-content">
+
+
+                <!-- ================= FILTERS ================= -->
+
+                <aside class="filters">
+
+                    <div class="filter-heading">
+                        <h3>Filters</h3>
+                        <button>Clear All</button>
+                    </div>
+
+
+                    <!-- Location -->
+
+                    <div class="filter-group">
+
+                        <h4>Location</h4>
+
+                        <label>
+                            <input type="checkbox">
+                            Within 25 km
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Within 50 km
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Within 100 km
+                        </label>
+
+                    </div>
+
+
+                    <!-- Product Type -->
+
+                    <div class="filter-group">
+
+                        <h4>Product Type</h4>
+
+                        <label>
+                            <input type="checkbox">
+                            Fresh Produce
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Organic
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Grains
+                        </label>
+
+                    </div>
+
+
+                    <!-- Price -->
+
+                    <div class="filter-group">
+
+                        <h4>Price Range</h4>
+
+                        <div class="price-inputs">
+
+                            <input type="number" placeholder="Min ₹">
+                            <span>—</span>
+                            <input type="number" placeholder="Max ₹">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Verified -->
+
+                    <div class="verified-filter">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <div>
+                            <strong>Verified Farmers</strong>
+                            <p>Show only verified sellers</p>
+                        </div>
+
+                        <input type="checkbox">
+
+                    </div>
+
+                </aside>
+
+
+                <!-- ================= PRODUCT GRID ================= -->
+
+                <div class="product-grid">
+
+
+                    <!-- TOMATO -->
+
+                    <div class="market-product-card">
+
+                        <div class="product-image">
+
+                            <img src="Images/tomatoes.jpeg" alt="Fresh Tomatoes">
+
+                            <span class="verified-badge">
+                                ✓ Verified Farmer
+                            </span>
+
+                            <button class="wishlist">
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-card-content">
+
+                            <div class="product-category">
+                                VEGETABLES
+                            </div>
+
+                            <h3>Fresh Tomatoes</h3>
+
+                            <div class="farmer-name">
+                                <i class="fa-solid fa-user"></i>
+                                Rajesh Kumar
+                            </div>
+
+                            <div class="product-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Haridwar, Uttarakhand
+                            </div>
+
+
+                            <div class="product-price-row">
+
+                                <div>
+                                    <strong>₹2,850</strong>
+                                    <span>/ Quintal</span>
+                                </div>
+
+                                <span class="available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <a href="product-details.html"
+                               class="view-product">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- POTATO -->
+
+                    <div class="market-product-card">
+
+                        <div class="product-image">
+
+                            <img src="Images/potatoes.jpeg" alt="Fresh Potatoes">
+
+                            <span class="verified-badge">
+                                ✓ Verified Farmer
+                            </span>
+
+                            <button class="wishlist">
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-card-content">
+
+                            <div class="product-category">
+                                VEGETABLES
+                            </div>
+
+                            <h3>Fresh Potatoes</h3>
+
+                            <div class="farmer-name">
+                                <i class="fa-solid fa-user"></i>
+                                Amit Singh
+                            </div>
+
+                            <div class="product-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Roorkee, Uttarakhand
+                            </div>
+
+
+                            <div class="product-price-row">
+
+                                <div>
+                                    <strong>₹2,100</strong>
+                                    <span>/ Quintal</span>
+                                </div>
+
+                                <span class="available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <a href="product-details.html"
+                               class="view-product">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WHEAT -->
+
+                    <div class="market-product-card">
+
+                        <div class="product-image">
+
+                            <img src="Images/wheat.jpeg" alt="Premium Wheat">
+
+                            <span class="verified-badge">
+                                ✓ Verified Farmer
+                            </span>
+
+                            <button class="wishlist">
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-card-content">
+
+                            <div class="product-category">
+                                GRAINS
+                            </div>
+
+                            <h3>Premium Wheat</h3>
+
+                            <div class="farmer-name">
+                                <i class="fa-solid fa-user"></i>
+                                Suresh Rawat
+                            </div>
+
+                            <div class="product-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Rishikesh, Uttarakhand
+                            </div>
+
+
+                            <div class="product-price-row">
+
+                                <div>
+                                    <strong>₹2,450</strong>
+                                    <span>/ Quintal</span>
+                                </div>
+
+                                <span class="available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <a href="product-details.html"
+                               class="view-product">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARROT -->
+
+                    <div class="market-product-card">
+
+                        <div class="product-image">
+
+                            <img src="Images/carrots.jpg" alt="Fresh Carrots">
+
+                            <span class="verified-badge">
+                                ✓ Verified Farmer
+                            </span>
+
+                            <button class="wishlist">
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-card-content">
+
+                            <div class="product-category">
+                                ORGANIC
+                            </div>
+
+                            <h3>Organic Carrots</h3>
+
+                            <div class="farmer-name">
+                                <i class="fa-solid fa-user"></i>
+                                Deepak Negi
+                            </div>
+
+                            <div class="product-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Doiwala, Uttarakhand
+                            </div>
+
+
+                            <div class="product-price-row">
+
+                                <div>
+                                    <strong>₹2,700</strong>
+                                    <span>/ Quintal</span>
+                                </div>
+
+                                <span class="available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <a href="product-details.html"
+                               class="view-product">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MARKETPLACE MESSAGE ================= -->
+
+        <section class="market-message">
+
+            <div class="message-icon">
+                🤝
+            </div>
+
+            <div>
+
+                <p>THE FARMSETU DIFFERENCE</p>
+
+                <h2>
+                    From Farmer to Buyer,
+                    <span>with fewer barriers.</span>
+                </h2>
+
+                <p>
+                    FarmSetu helps create a more transparent marketplace
+                    where farmers can reach buyers directly.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="market-footer">
+
+        <div class="footer-logo">
+            🌱 FarmSetu
+        </div>
+
+        <p>
+            Connecting farms with markets. Building fairer agriculture.
+        </p>
+
+        <span>
+            © 2026 FarmSetu. All rights reserved.
+        </span>
+
+    </footer>
+
+</body>
+</html>

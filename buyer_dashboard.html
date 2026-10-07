@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Buyer Dashboard | FarmSetu</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+<!-- CSS File -->
+<link rel="stylesheet" href="buyer-dashboard.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            🌱
+        </div>
+
+        <div class="logo-text">
+            <h2>FarmSetu</h2>
+            <p>Buyer Portal</p>
+        </div>
+
+    </a>
+
+
+    <div class="nav-right">
+
+        <div class="notification">
+            🔔
+            <span></span>
+        </div>
+
+
+        <div class="buyer-profile">
+
+            <div class="profile-icon">
+                🏪
+            </div>
+
+            <div class="profile-info">
+                <h4 id="profile-name">FreshMart Store</h4>
+                <p>Verified Buyer</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     DASHBOARD LAYOUT
+========================== -->
+
+<div class="dashboard-layout">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <p class="menu-title">
+            BUYER MENU
+        </p>
+
+
+        <a href="buyer-dashboard.html" class="menu-item active">
+            <span class="menu-icon">📊</span>
+            Dashboard
+        </a>
+
+
+        <a href="marketplace.html" class="menu-item">
+            <span class="menu-icon">🛒</span>
+            Browse Marketplace
+        </a>
+
+
+        <a href="buyer-requests.html" class="menu-item">
+            <span class="menu-icon">🤝</span>
+            My Requests
+            <span class="request-count">2</span>
+        </a>
+
+
+        <a href="buyer-orders.html" class="menu-item">
+            <span class="menu-icon">📦</span>
+            My Orders
+        </a>
+
+
+        <a href="saved-products.html" class="menu-item">
+            <span class="menu-icon">♡</span>
+            Saved Products
+        </a>
+
+
+        <div class="menu-divider"></div>
+
+
+        <a href="#" class="menu-item">
+            <span class="menu-icon">👤</span>
+            My Profile
+        </a>
+
+
+        <a href="index.html" class="menu-item logout">
+            <span class="menu-icon">🚪</span>
+            Logout
+        </a>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- =========================
+             WELCOME SECTION
+        ========================== -->
+
+        <section class="welcome-section">
+
+            <div>
+
+                <p class="small-title">
+                    BUYER DASHBOARD
+                </p>
+
+                <h1 id="greeting">
+                    Welcome back, FreshMart! 👋
+                </h1>
+
+                <p class="welcome-text">
+                    Discover fresh farm produce and connect directly
+                    with verified farmers across India.
+                </p>
+
+            </div>
+
+
+            <a href="marketplace.html" class="browse-btn">
+                Browse Marketplace →
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================
+             STATISTICS
+        ========================== -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon active-orders-icon">
+                    📦
+                </div>
+
+                <div>
+                    <p>Active Orders</p>
+                    <h2>4</h2>
+                    <span class="green-text">
+                        Currently in progress
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon requests-icon">
+                    🤝
+                </div>
+
+                <div>
+                    <p>Pending Requests</p>
+                    <h2>2</h2>
+                    <span class="orange-text">
+                        Waiting for farmer
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon completed-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <p>Completed Orders</p>
+                    <h2>18</h2>
+                    <span class="green-text">
+                        Successfully completed
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon saved-icon">
+                    ♡
+                </div>
+
+                <div>
+                    <p>Saved Products</p>
+                    <h2>12</h2>
+                    <span class="gray-text">
+                        Available for later
+                    </span>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             SEARCH SECTION
+        ========================== -->
+
+        <section class="search-section">
+
+            <div class="search-content">
+
+                <p class="small-title">
+                    FIND FARM PRODUCE
+                </p>
+
+                <h2>
+                    What are you looking for today?
+                </h2>
+
+                <p>
+                    Search products, farmers or locations and
+                    buy directly from the source.
+                </p>
+
+
+                <div class="search-area">
+
+                    <div class="search-box">
+                        <span>⌕</span>
+
+                        <input type="text"
+                               placeholder="Search products, farmers or location...">
+                    </div>
+
+
+                    <button class="search-btn">
+                        Search
+                    </button>
+
+                </div>
+
+
+                <div class="popular-searches">
+
+                    <span>Popular:</span>
+
+                    <button>Tomatoes</button>
+                    <button>Potatoes</button>
+                    <button>Wheat</button>
+                    <button>Carrots</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-illustration">
+
+                <div class="illustration-circle">
+
+                    🌾
+
+                </div>
+
+                <div class="floating-card card-one">
+                    🌱
+                    <span>Fresh Produce</span>
+                </div>
+
+                <div class="floating-card card-two">
+                    ✓
+                    <span>Verified Farmers</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             MAIN DASHBOARD GRID
+        ========================== -->
+
+        <div class="dashboard-grid">
+
+
+            <!-- =========================
+                 LEFT CONTENT
+            ========================== -->
+
+            <div class="left-content">
+
+
+                <!-- RECOMMENDED PRODUCTS -->
+
+                <section class="section-heading">
+
+                    <div>
+
+                        <p class="small-title">
+                            EXPLORE PRODUCTS
+                        </p>
+
+                        <h2>
+                            Recommended for You
+                        </h2>
+
+                    </div>
+
+
+                    <a href="marketplace.html">
+                        View All →
+                    </a>
+
+                </section>
+
+
+                <section class="products-grid">
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="Images/tomatoes.jpeg"
+                                 alt="Fresh Tomatoes">
+
+                            <span class="verified-tag">
+                                ✓ Verified
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-content">
+
+                            <p class="product-category">
+                                VEGETABLES
+                            </p>
+
+                            <h3>
+                                Fresh Tomatoes
+                            </h3>
+
+                            <p class="farmer-name">
+                                🌱 Green Valley Farms
+                            </p>
+
+
+                            <div class="product-bottom">
+
+                                <div>
+                                    <strong>
+                                        ₹32
+                                    </strong>
+                                    <span>/ kg</span>
+                                </div>
+
+
+                                <a href="product-details.html">
+                                    View →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="Images/potatoes.jpeg"
+                                 alt="Organic Potatoes">
+
+                            <span class="verified-tag">
+                                ✓ Verified
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-content">
+
+                            <p class="product-category">
+                                VEGETABLES
+                            </p>
+
+                            <h3>
+                                Organic Potatoes
+                            </h3>
+
+                            <p class="farmer-name">
+                                🌱 Sharma Farms
+                            </p>
+
+
+                            <div class="product-bottom">
+
+                                <div>
+                                    <strong>
+                                        ₹25
+                                    </strong>
+                                    <span>/ kg</span>
+                                </div>
+
+
+                                <a href="product-details.html">
+                                    View →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="Images/wheat.jpeg"
+                                 alt="Premium Wheat">
+
+                            <span class="verified-tag">
+                                ✓ Verified
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-content">
+
+                            <p class="product-category">
+                                GRAINS
+                            </p>
+
+                            <h3>
+                                Premium Wheat
+                            </h3>
+
+                            <p class="farmer-name">
+                                🌱 Kumar Agro Farms
+                            </p>
+
+
+                            <div class="product-bottom">
+
+                                <div>
+                                    <strong>
+                                        ₹27
+                                    </strong>
+                                    <span>/ kg</span>
+                                </div>
+
+
+                                <a href="product-details.html">
+                                    View →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- RECENT ORDERS -->
+
+                <section class="orders-section">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="small-title">
+                                YOUR ACTIVITY
+                            </p>
+
+                            <h2>
+                                Recent Orders
+                            </h2>
+
+                        </div>
+
+
+                        <a href="buyer-orders.html">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <div class="recent-orders">
+
+
+                        <!-- ORDER 1 -->
+
+                        <div class="recent-order">
+
+                            <div class="order-product-image">
+                                🌾
+                            </div>
+
+
+                            <div class="order-main-info">
+
+                                <h3>
+                                    Premium Quality Wheat
+                                </h3>
+
+                                <p>
+                                    Order #FS1024 · 500 kg
+                                </p>
+
+                            </div>
+
+
+                            <div class="order-status-info">
+
+                                <span class="status preparing">
+                                    Preparing
+                                </span>
+
+                                <p>
+                                    Expected pickup: Tomorrow
+                                </p>
+
+                            </div>
+
+
+                            <a href="order-details.html"
+                               class="view-order-btn">
+
+                                View →
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- ORDER 2 -->
+
+                        <div class="recent-order">
+
+                            <div class="order-product-image">
+                                🍅
+                            </div>
+
+
+                            <div class="order-main-info">
+
+                                <h3>
+                                    Fresh Tomatoes
+                                </h3>
+
+                                <p>
+                                    Order #FS1018 · 250 kg
+                                </p>
+
+                            </div>
+
+
+                            <div class="order-status-info">
+
+                                <span class="status ready">
+                                    Ready
+                                </span>
+
+                                <p>
+                                    Ready for pickup
+                                </p>
+
+                            </div>
+
+
+                            <a href="order-details.html"
+                               class="view-order-btn">
+
+                                View →
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 RIGHT CONTENT
+            ========================== -->
+
+            <aside class="right-content">
+
+
+                <!-- QUICK ACTIONS -->
+
+                <section class="quick-actions">
+
+                    <p class="small-title">
+                        QUICK ACTIONS
+                    </p>
+
+                    <h2>
+                        Manage Your Buying
+                    </h2>
+
+
+                    <a href="marketplace.html"
+                       class="quick-action">
+
+                        <span class="quick-icon">
+                            🛒
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Browse Marketplace
+                            </h4>
+
+                            <p>
+                                Explore fresh farm products
+                            </p>
+
+                        </div>
+
+                        <strong>→</strong>
+
+                    </a>
+
+
+                    <a href="buyer-requests.html"
+                       class="quick-action">
+
+                        <span class="quick-icon">
+                            🤝
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                My Requests
+                            </h4>
+
+                            <p>
+                                Track your purchase requests
+                            </p>
+
+                        </div>
+
+                        <strong>→</strong>
+
+                    </a>
+
+
+                    <a href="saved-products.html"
+                       class="quick-action">
+
+                        <span class="quick-icon">
+                            ♡
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Saved Products
+                            </h4>
+
+                            <p>
+                                View products saved for later
+                            </p>
+
+                        </div>
+
+                        <strong>→</strong>
+
+                    </a>
+
+                </section>
+
+
+
+                <!-- DIRECT FARMING -->
+
+                <section class="benefit-card">
+
+                    <div class="benefit-icon">
+                        🌱
+                    </div>
+
+                    <h3>
+                        Buy Directly from Farmers
+                    </h3>
+
+                    <p>
+                        FarmSetu helps you connect directly
+                        with verified farmers, reducing
+                        unnecessary intermediaries.
+                    </p>
+
+                    <a href="marketplace.html">
+                        Explore Marketplace →
+                    </a>
+
+                </section>
+
+
+            </aside>
+
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            © 2026 FarmSetu · Connecting Farmers Directly with Buyers
+        </footer>
+
+
+    </main>
+
+
+</div>
+```
+
+</body>
+<script type="module" src="buyer-dashboard.js"></script>
+
+</html>

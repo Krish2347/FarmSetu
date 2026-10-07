@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>My Requests | FarmSetu</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="buyer-requests.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">🌱</div>
+
+        <div class="logo-text">
+            <h2>FarmSetu</h2>
+            <p>Buyer Portal</p>
+        </div>
+
+    </a>
+
+
+    <div class="nav-right">
+
+        <div class="notification">
+            🔔
+            <span></span>
+        </div>
+
+
+        <div class="buyer-profile">
+
+            <div class="profile-icon">🏪</div>
+
+            <div class="profile-info">
+                <h4>FreshMart Store</h4>
+                <p>Verified Buyer</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     DASHBOARD LAYOUT
+========================== -->
+
+<div class="dashboard-layout">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <p class="menu-title">BUYER MENU</p>
+
+
+        <a href="buyer-dashboard.html" class="menu-item">
+            <span class="menu-icon">📊</span>
+            Dashboard
+        </a>
+
+
+        <a href="marketplace.html" class="menu-item">
+            <span class="menu-icon">🛒</span>
+            Browse Marketplace
+        </a>
+
+
+        <a href="buyer-requests.html" class="menu-item active">
+            <span class="menu-icon">🤝</span>
+            My Requests
+            <span class="request-count">2</span>
+        </a>
+
+
+        <a href="buyer-orders.html" class="menu-item">
+            <span class="menu-icon">📦</span>
+            My Orders
+        </a>
+
+
+        <a href="saved-products.html" class="menu-item">
+            <span class="menu-icon">♡</span>
+            Saved Products
+        </a>
+
+
+        <div class="menu-divider"></div>
+
+
+        <a href="#" class="menu-item">
+            <span class="menu-icon">👤</span>
+            My Profile
+        </a>
+
+
+        <a href="index.html" class="menu-item logout">
+            <span class="menu-icon">🚪</span>
+            Logout
+        </a>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+
+        <section class="page-header">
+
+            <div>
+
+                <p class="small-title">
+                    BUYER ACTIVITY
+                </p>
+
+                <h1>
+                    My Purchase Requests
+                </h1>
+
+                <p>
+                    Track and manage all the purchase requests
+                    you have sent directly to farmers.
+                </p>
+
+            </div>
+
+
+            <a href="marketplace.html" class="browse-btn">
+                + Browse Products
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================
+             REQUEST SUMMARY
+        ========================== -->
+
+        <section class="summary-grid">
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon pending-icon">
+                    ⏳
+                </div>
+
+                <div>
+                    <p>Pending</p>
+                    <h2>2</h2>
+                    <span>Awaiting farmer response</span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon accepted-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <p>Accepted</p>
+                    <h2>3</h2>
+                    <span>Converted to orders</span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon rejected-icon">
+                    ×
+                </div>
+
+                <div>
+                    <p>Rejected</p>
+                    <h2>1</h2>
+                    <span>Browse similar products</span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon total-icon">
+                    📋
+                </div>
+
+                <div>
+                    <p>Total Requests</p>
+                    <h2>6</h2>
+                    <span>All purchase requests</span>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             FILTER BAR
+        ========================== -->
+
+        <section class="filter-section">
+
+            <div class="filter-tabs">
+
+                <button class="filter-btn active">
+                    All
+                    <span>6</span>
+                </button>
+
+                <button class="filter-btn">
+                    Pending
+                    <span>2</span>
+                </button>
+
+                <button class="filter-btn">
+                    Accepted
+                    <span>3</span>
+                </button>
+
+                <button class="filter-btn">
+                    Rejected
+                    <span>1</span>
+                </button>
+
+            </div>
+
+
+            <div class="sort-box">
+
+                <label for="sort">
+                    Sort by:
+                </label>
+
+                <select id="sort">
+
+                    <option>
+                        Latest First
+                    </option>
+
+                    <option>
+                        Oldest First
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             REQUEST LIST
+        ========================== -->
+
+        <section class="requests-list">
+
+
+            <!-- =========================
+                 REQUEST 1 - PENDING
+            ========================== -->
+
+            <article class="request-card">
+
+                <div class="request-top">
+
+
+                    <div class="product-block">
+
+                        <div class="product-image">
+
+                            <img src="Images/wheat.jpeg"
+                                 alt="Premium Quality Wheat">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="category">
+                                GRAINS
+                            </p>
+
+                            <h2>
+                                Premium Quality Wheat
+                            </h2>
+
+                            <p class="farmer">
+                                🌱 Kumar Agro Farms
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-box">
+
+                        <span class="status pending">
+                            ● Pending
+                        </span>
+
+                        <p>
+                            Sent today, 10:30 AM
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="request-details">
+
+
+                    <div class="detail">
+
+                        <p>Requested Quantity</p>
+                        <h4>500 kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Your Offered Price</p>
+                        <h4>₹27 / kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Estimated Total</p>
+                        <h4>₹13,500</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Expected Response</p>
+                        <h4>Within 24 hours</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="request-footer">
+
+                    <p>
+                        <span>ℹ</span>
+                        The farmer has been notified about your request.
+                    </p>
+
+
+                    <div class="request-actions">
+
+                        <a href="#" class="cancel-btn">
+                            Cancel Request
+                        </a>
+
+                        <a href="product-details.html" class="details-btn">
+                            View Product →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 REQUEST 2 - ACCEPTED
+            ========================== -->
+
+            <article class="request-card accepted-card">
+
+                <div class="request-top">
+
+
+                    <div class="product-block">
+
+                        <div class="product-image">
+
+                            <img src="Images/tomatoes.jpeg"
+                                 alt="Fresh Tomatoes">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="category">
+                                VEGETABLES
+                            </p>
+
+                            <h2>
+                                Fresh Tomatoes
+                            </h2>
+
+                            <p class="farmer">
+                                🌱 Green Valley Farms
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-box">
+
+                        <span class="status accepted">
+                            ✓ Accepted
+                        </span>
+
+                        <p>
+                            Accepted yesterday
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="request-details">
+
+
+                    <div class="detail">
+
+                        <p>Requested Quantity</p>
+                        <h4>250 kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Agreed Price</p>
+                        <h4>₹32 / kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Total Amount</p>
+                        <h4>₹8,000</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Order Number</p>
+                        <h4>#FS1018</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="request-footer accepted-footer">
+
+                    <p>
+                        <span>✓</span>
+                        Your request has been accepted and converted into an order.
+                    </p>
+
+
+                    <a href="order-details.html" class="view-order-btn">
+                        View Order →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 REQUEST 3 - REJECTED
+            ========================== -->
+
+            <article class="request-card rejected-card">
+
+                <div class="request-top">
+
+
+                    <div class="product-block">
+
+                        <div class="product-image">
+
+                            <img src="Images/carrots.jpg"
+                                 alt="Fresh Carrots">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="category">
+                                VEGETABLES
+                            </p>
+
+                            <h2>
+                                Fresh Organic Carrots
+                            </h2>
+
+                            <p class="farmer">
+                                🌱 Fresh Harvest Farm
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-box">
+
+                        <span class="status rejected">
+                            × Rejected
+                        </span>
+
+                        <p>
+                            Rejected 2 days ago
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="request-details">
+
+
+                    <div class="detail">
+
+                        <p>Requested Quantity</p>
+                        <h4>100 kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Your Offered Price</p>
+                        <h4>₹40 / kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Estimated Total</p>
+                        <h4>₹4,000</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Reason</p>
+                        <h4>Product unavailable</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="request-footer rejected-footer">
+
+                    <p>
+                        <span>!</span>
+                        This product is currently unavailable from the farmer.
+                    </p>
+
+
+                    <a href="marketplace.html" class="similar-btn">
+                        Browse Similar Products →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 REQUEST 4 - PENDING
+            ========================== -->
+
+            <article class="request-card">
+
+                <div class="request-top">
+
+
+                    <div class="product-block">
+
+                        <div class="product-image">
+
+                            <img src="Images/potatoes.jpeg"
+                                 alt="Organic Potatoes">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="category">
+                                VEGETABLES
+                            </p>
+
+                            <h2>
+                                Organic Potatoes
+                            </h2>
+
+                            <p class="farmer">
+                                🌱 Sharma Farms
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-box">
+
+                        <span class="status pending">
+                            ● Pending
+                        </span>
+
+                        <p>
+                            Sent 3 hours ago
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="request-details">
+
+
+                    <div class="detail">
+
+                        <p>Requested Quantity</p>
+                        <h4>300 kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Your Offered Price</p>
+                        <h4>₹25 / kg</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Estimated Total</p>
+                        <h4>₹7,500</h4>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <p>Expected Response</p>
+                        <h4>Within 24 hours</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="request-footer">
+
+                    <p>
+                        <span>ℹ</span>
+                        Your purchase request is waiting for farmer approval.
+                    </p>
+
+
+                    <div class="request-actions">
+
+                        <a href="#" class="cancel-btn">
+                            Cancel Request
+                        </a>
+
+                        <a href="product-details.html" class="details-btn">
+                            View Product →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             HELP SECTION
+        ========================== -->
+
+        <section class="help-section">
+
+            <div class="help-icon">
+                💡
+            </div>
+
+            <div>
+
+                <h3>
+                    How do purchase requests work?
+                </h3>
+
+                <p>
+                    Send a request directly to a farmer with your required quantity
+                    and offered price. Once accepted, your request automatically
+                    becomes an order that you can track from your dashboard.
+                </p>
+
+            </div>
+
+
+            <a href="marketplace.html">
+                Explore Products →
+            </a>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            © 2026 FarmSetu · Connecting Farmers Directly with Buyers
+        </footer>
+
+
+    </main>
+
+
+</div>
+```
+
+</body>
+
+</html>

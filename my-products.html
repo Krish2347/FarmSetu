@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Products | FarmSetu</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="my-products.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-icon">
+                🌱
+            </div>
+
+
+            <div class="logo-text">
+
+                <h2>FarmSetu</h2>
+
+                <p>Farmer Portal</p>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- NAV RIGHT -->
+
+        <div class="nav-right">
+
+            <div class="notification">
+                🔔
+                <span></span>
+            </div>
+
+
+            <div class="farmer-profile">
+
+                <div class="profile-icon">
+                    👨‍🌾
+                </div>
+
+
+                <div class="profile-info">
+
+                    <h4>Rajesh Kumar</h4>
+
+                    <p>Verified Farmer</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+
+
+    <!-- =========================
+         DASHBOARD LAYOUT
+    ========================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+
+            <div class="menu-title">
+                FARMER MENU
+            </div>
+
+
+            <a href="farmer-dashboard.html"
+               class="menu-item">
+
+                <span class="menu-icon">
+                    📊
+                </span>
+
+                Dashboard
+
+            </a>
+
+
+
+            <!-- ACTIVE PAGE -->
+
+            <a href="my-products.html"
+               class="menu-item active">
+
+                <span class="menu-icon">
+                    📦
+                </span>
+
+                My Products
+
+            </a>
+
+
+
+            <a href="add-product.html"
+               class="menu-item">
+
+                <span class="menu-icon">
+                    ➕
+                </span>
+
+                Add Product
+
+            </a>
+
+
+
+            <a href="buyer-requests.html"
+               class="menu-item">
+
+                <span class="menu-icon">
+                    🤝
+                </span>
+
+                Buyer Requests
+
+                <span class="request-count">
+                    4
+                </span>
+
+            </a>
+
+
+
+            <a href="#"
+               class="menu-item">
+
+                <span class="menu-icon">
+                    📋
+                </span>
+
+                Orders
+
+            </a>
+
+
+
+            <div class="menu-divider"></div>
+
+
+
+            <a href="#"
+               class="menu-item">
+
+                <span class="menu-icon">
+                    👤
+                </span>
+
+                My Profile
+
+            </a>
+
+
+
+            <a href="index.html"
+               class="menu-item logout">
+
+                <span class="menu-icon">
+                    🚪
+                </span>
+
+                Logout
+
+            </a>
+
+
+        </aside>
+
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="main-content">
+
+
+            <!-- =========================
+                 PAGE HEADER
+            ========================== -->
+
+            <section class="page-header">
+
+
+                <div class="header-text">
+
+                    <p class="small-title">
+                        FARMER MARKETPLACE
+                    </p>
+
+
+                    <h1>
+                        My Products
+                    </h1>
+
+
+                    <p>
+                        Manage your product listings and keep
+                        your availability up to date.
+                    </p>
+
+                </div>
+
+
+                <a href="add-product.html"
+                   class="add-product-btn">
+
+                    <span>+</span>
+
+                    Add New Product
+
+                </a>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 STATS
+            ========================== -->
+
+            <section class="product-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📦
+                    </div>
+
+
+                    <div>
+
+                        <p>Total Products</p>
+
+                        <h2>8</h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <p>Active Listings</p>
+
+                        <h2>6</h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ⏳
+                    </div>
+
+
+                    <div>
+
+                        <p>Pending Requests</p>
+
+                        <h2>4</h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+                        ○
+                    </div>
+
+
+                    <div>
+
+                        <p>Sold Out</p>
+
+                        <h2>1</h2>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 SEARCH AND FILTER
+            ========================== -->
+
+            <section class="product-controls">
+
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+                    <span>
+                        🔍
+                    </span>
+
+
+                    <input type="text"
+                           placeholder="Search your products...">
+
+                </div>
+
+
+
+                <!-- FILTER -->
+
+                <div class="filter-box">
+
+                    <select>
+
+                        <option>
+                            All Categories
+                        </option>
+
+                        <option>
+                            Vegetables
+                        </option>
+
+                        <option>
+                            Fruits
+                        </option>
+
+                        <option>
+                            Grains
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 FILTER TABS
+            ========================== -->
+
+            <div class="filter-tabs">
+
+                <button class="filter-tab active">
+                    All
+                    <span>8</span>
+                </button>
+
+
+                <button class="filter-tab">
+                    Active
+                    <span>6</span>
+                </button>
+
+
+                <button class="filter-tab">
+                    Sold Out
+                    <span>1</span>
+                </button>
+
+
+                <button class="filter-tab">
+                    Drafts
+                    <span>1</span>
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCTS HEADER
+            ========================== -->
+
+            <div class="products-heading">
+
+                <div>
+
+                    <h2>
+                        Your Product Listings
+                    </h2>
+
+
+                    <p>
+                        Showing 8 products
+                    </p>
+
+                </div>
+
+
+                <select class="sort-select">
+
+                    <option>
+                        Recently Added
+                    </option>
+
+                    <option>
+                        Price: Low to High
+                    </option>
+
+                    <option>
+                        Price: High to Low
+                    </option>
+
+                    <option>
+                        Quantity
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCTS GRID
+            ========================== -->
+
+            <section class="products-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <article class="product-card">
+
+
+                    <div class="product-image">
+
+                        <img src="Images/tomatoes.jpeg"
+                             alt="Fresh Tomatoes">
+
+
+                        <span class="status active-status">
+                            ● Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <div class="product-title">
+
+                            <div>
+
+                                <p class="category">
+                                    VEGETABLES
+                                </p>
+
+
+                                <h3>
+                                    Fresh Organic Tomatoes
+                                </h3>
+
+                            </div>
+
+
+                            <button class="more-btn">
+                                ⋮
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="product-location">
+
+                            📍 Haridwar, Uttarakhand
+
+                        </div>
+
+
+
+                        <div class="product-details">
+
+
+                            <div>
+
+                                <p>Price</p>
+
+                                <strong>
+                                    ₹30 <span>/ kg</span>
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <p>Available</p>
+
+                                <strong>
+                                    500 kg
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="card-buttons">
+
+                            <a href="#"
+                               class="edit-btn">
+
+                                ✏ Edit
+
+                            </a>
+
+
+                            <a href="product-details.html"
+                               class="view-btn">
+
+                                View →
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- PRODUCT 2 -->
+
+                <article class="product-card">
+
+
+                    <div class="product-image">
+
+                        <img src="Images/potatoes.jpeg"
+                             alt="Fresh Potatoes">
+
+
+                        <span class="status active-status">
+                            ● Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <div class="product-title">
+
+                            <div>
+
+                                <p class="category">
+                                    VEGETABLES
+                                </p>
+
+
+                                <h3>
+                                    Fresh Farm Potatoes
+                                </h3>
+
+                            </div>
+
+
+                            <button class="more-btn">
+                                ⋮
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="product-location">
+
+                            📍 Haridwar, Uttarakhand
+
+                        </div>
+
+
+
+                        <div class="product-details">
+
+
+                            <div>
+
+                                <p>Price</p>
+
+                                <strong>
+                                    ₹25 <span>/ kg</span>
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <p>Available</p>
+
+                                <strong>
+                                    300 kg
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="card-buttons">
+
+                            <a href="#"
+                               class="edit-btn">
+
+                                ✏ Edit
+
+                            </a>
+
+
+                            <a href="product-details.html"
+                               class="view-btn">
+
+                                View →
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- PRODUCT 3 -->
+
+                <article class="product-card">
+
+
+                    <div class="product-image">
+
+                        <img src="Images/wheat.jpeg"
+                             alt="Fresh Wheat">
+
+
+                        <span class="status active-status">
+                            ● Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <div class="product-title">
+
+                            <div>
+
+                                <p class="category">
+                                    GRAINS
+                                </p>
+
+
+                                <h3>
+                                    Premium Quality Wheat
+                                </h3>
+
+                            </div>
+
+
+                            <button class="more-btn">
+                                ⋮
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="product-location">
+
+                            📍 Haridwar, Uttarakhand
+
+                        </div>
+
+
+
+                        <div class="product-details">
+
+
+                            <div>
+
+                                <p>Price</p>
+
+                                <strong>
+                                    ₹28 <span>/ kg</span>
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <p>Available</p>
+
+                                <strong>
+                                    1000 kg
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="card-buttons">
+
+                            <a href="#"
+                               class="edit-btn">
+
+                                ✏ Edit
+
+                            </a>
+
+
+                            <a href="product-details.html"
+                               class="view-btn">
+
+                                View →
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- PRODUCT 4 -->
+
+                <article class="product-card">
+
+
+                    <div class="product-image">
+
+                        <img src="Images/carrots.jpg"
+                             alt="Fresh Carrots">
+
+
+                        <span class="status active-status">
+                            ● Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <div class="product-title">
+
+                            <div>
+
+                                <p class="category">
+                                    VEGETABLES
+                                </p>
+
+
+                                <h3>
+                                    Fresh Organic Carrots
+                                </h3>
+
+                            </div>
+
+
+                            <button class="more-btn">
+                                ⋮
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="product-location">
+
+                            📍 Haridwar, Uttarakhand
+
+                        </div>
+
+
+
+                        <div class="product-details">
+
+
+                            <div>
+
+                                <p>Price</p>
+
+                                <strong>
+                                    ₹35 <span>/ kg</span>
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <p>Available</p>
+
+                                <strong>
+                                    250 kg
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="card-buttons">
+
+                            <a href="#"
+                               class="edit-btn">
+
+                                ✏ Edit
+
+                            </a>
+
+
+                            <a href="product-details.html"
+                               class="view-btn">
+
+                                View →
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- PRODUCT 5 - SOLD OUT -->
+
+                <article class="product-card sold-card">
+
+
+                    <div class="product-image">
+
+                        <img src="Images/tomatoes.jpeg"
+                             alt="Sold Out Tomatoes">
+
+
+                        <span class="status sold-status">
+                            ● Sold Out
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+
+                        <div class="product-title">
+
+                            <div>
+
+                                <p class="category">
+                                    VEGETABLES
+                                </p>
+
+
+                                <h3>
+                                    Seasonal Red Tomatoes
+                                </h3>
+
+                            </div>
+
+
+                            <button class="more-btn">
+                                ⋮
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="product-location">
+
+                            📍 Haridwar, Uttarakhand
+
+                        </div>
+
+
+
+                        <div class="product-details">
+
+
+                            <div>
+
+                                <p>Last Price</p>
+
+                                <strong>
+                                    ₹32 <span>/ kg</span>
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <p>Available</p>
+
+                                <strong>
+                                    0 kg
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="card-buttons">
+
+                            <a href="#"
+                               class="restock-btn">
+
+                                ↻ Restock
+
+                            </a>
+
+
+                            <a href="product-details.html"
+                               class="view-btn">
+
+                                View →
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- ADD NEW PRODUCT CARD -->
+
+                <a href="add-product.html"
+                   class="add-card">
+
+
+                    <div class="add-circle">
+                        +
+                    </div>
+
+
+                    <h3>
+                        Add New Product
+                    </h3>
+
+
+                    <p>
+                        List your fresh produce and
+                        connect directly with buyers.
+                    </p>
+
+
+                    <span>
+                        + Create Listing
+                    </span>
+
+
+                </a>
+
+
+            </section>
+
+
+            <!-- =========================
+                 BOTTOM MESSAGE
+            ========================== -->
+
+            <div class="bottom-info">
+
+                <span>
+                    💡
+                </span>
+
+
+                <p>
+
+                    Keep your product quantities and prices updated
+                    to help buyers make informed decisions.
+
+                </p>
+
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <footer>
+
+                © 2026 FarmSetu · Empowering Farmers Through Direct Markets
+
+            </footer>
+
+
+        </main>
+
+
+    </div>
+
+
+</body>
+
+</html>

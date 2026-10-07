@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Add Product | FarmSetu</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="add-product.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+           class="logo">
+
+            <div class="logo-icon">
+                🌱
+            </div>
+
+
+            <div class="logo-text">
+
+                <h2>FarmSetu</h2>
+
+                <p>Farmer Portal</p>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="nav-right">
+
+
+            <a href="farmer-dashboard.html"
+               class="dashboard-link">
+
+                ← Back to Dashboard
+
+            </a>
+
+
+            <div class="farmer-profile">
+
+                <div class="profile-icon">
+                    👨‍🌾
+                </div>
+
+
+                <div>
+
+                    <h4>Rajesh Kumar</h4>
+
+                    <p>Verified Farmer</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+
+    <!-- =========================
+         MAIN SECTION
+    ========================== -->
+
+    <main class="add-product-page">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="page-header">
+
+
+            <div>
+
+                <p class="small-title">
+                    FARMER MARKETPLACE
+                </p>
+
+
+                <h1>
+                    Add a New Product
+                </h1>
+
+
+                <p>
+                    Share your fresh produce directly with buyers
+                    and grow your market.
+                </p>
+
+            </div>
+
+
+            <!-- STEPS -->
+
+            <div class="steps">
+
+
+                <div class="step active">
+
+                    <span>1</span>
+
+                    Product Details
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step">
+
+                    <span>2</span>
+
+                    Review
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step">
+
+                    <span>3</span>
+
+                    Publish
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             FORM CONTAINER
+        ========================== -->
+
+        <form class="product-form">
+
+
+            <div class="form-layout">
+
+
+                <!-- =========================
+                     LEFT SIDE
+                ========================== -->
+
+                <div class="form-left">
+
+
+                    <!-- =========================
+                         PRODUCT INFORMATION
+                    ========================== -->
+
+                    <section class="form-card">
+
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">
+                                📦
+                            </div>
+
+
+                            <div>
+
+                                <h2>
+                                    Product Information
+                                </h2>
+
+                                <p>
+                                    Tell buyers about your produce.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT NAME -->
+
+                        <div class="form-group">
+
+                            <label for="product-name">
+
+                                Product Name
+                                <span>*</span>
+
+                            </label>
+
+
+                            <input type="text"
+                                   id="product-name"
+                                   placeholder="e.g. Fresh Organic Tomatoes"
+                                   required>
+
+                        </div>
+
+
+
+                        <!-- CATEGORY + GRADE -->
+
+                        <div class="two-column">
+
+
+                            <!-- CATEGORY -->
+
+                            <div class="form-group">
+
+                                <label for="category">
+
+                                    Category
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <select id="category">
+
+                                    <option value="">
+                                        Select Category
+                                    </option>
+
+                                    <option>
+                                        Vegetables
+                                    </option>
+
+                                    <option>
+                                        Fruits
+                                    </option>
+
+                                    <option>
+                                        Grains
+                                    </option>
+
+                                    <option>
+                                        Pulses
+                                    </option>
+
+                                    <option>
+                                        Dairy
+                                    </option>
+
+                                    <option>
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <!-- QUALITY -->
+
+                            <div class="form-group">
+
+                                <label for="quality">
+
+                                    Quality / Grade
+
+                                </label>
+
+
+                                <select id="quality">
+
+                                    <option value="">
+                                        Select Grade
+                                    </option>
+
+                                    <option>
+                                        Premium
+                                    </option>
+
+                                    <option>
+                                        Grade A
+                                    </option>
+
+                                    <option>
+                                        Grade B
+                                    </option>
+
+                                    <option>
+                                        Standard
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- DESCRIPTION -->
+
+                        <div class="form-group">
+
+                            <label for="description">
+
+                                Product Description
+
+                            </label>
+
+
+                            <textarea id="description"
+                                      placeholder="Describe your product, quality, farming method, freshness, etc."></textarea>
+
+                        </div>
+
+
+                    </section>
+
+
+
+                    <!-- =========================
+                         QUANTITY & PRICING
+                    ========================== -->
+
+                    <section class="form-card">
+
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">
+                                ⚖️
+                            </div>
+
+
+                            <div>
+
+                                <h2>
+                                    Quantity & Pricing
+                                </h2>
+
+                                <p>
+                                    Set the available quantity and price.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="three-column">
+
+
+                            <!-- QUANTITY -->
+
+                            <div class="form-group">
+
+                                <label for="quantity">
+
+                                    Available Quantity
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input type="number"
+                                       id="quantity"
+                                       placeholder="e.g. 500">
+
+                            </div>
+
+
+
+                            <!-- UNIT -->
+
+                            <div class="form-group">
+
+                                <label for="unit">
+
+                                    Unit
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <select id="unit">
+
+                                    <option>kg</option>
+
+                                    <option>Quintal</option>
+
+                                    <option>Tonne</option>
+
+                                    <option>Pieces</option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <!-- PRICE -->
+
+                            <div class="form-group">
+
+                                <label for="price">
+
+                                    Price per Unit
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <div class="price-input">
+
+                                    <span>₹</span>
+
+                                    <input type="number"
+                                           id="price"
+                                           placeholder="30">
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- HARVEST DATE -->
+
+                        <div class="form-group harvest-group">
+
+                            <label for="harvest-date">
+
+                                Harvest Date
+
+                            </label>
+
+
+                            <input type="date"
+                                   id="harvest-date">
+
+                            <p class="input-note">
+
+                                This helps buyers know how fresh
+                                your produce is.
+
+                            </p>
+
+                        </div>
+
+
+                    </section>
+
+
+
+                    <!-- =========================
+                         PRODUCT IMAGE
+                    ========================== -->
+
+                    <section class="form-card">
+
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">
+                                📷
+                            </div>
+
+
+                            <div>
+
+                                <h2>
+                                    Product Images
+                                </h2>
+
+                                <p>
+                                    Add clear photos of your produce.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- UPLOAD BOX -->
+
+                        <label class="upload-box"
+                               for="product-image">
+
+
+                            <input type="file"
+                                   id="product-image"
+                                   accept="image/*"
+                                   hidden>
+
+
+                            <div class="upload-icon">
+
+                                📷
+
+                            </div>
+
+
+                            <h3>
+                                Upload Product Images
+                            </h3>
+
+
+                            <p>
+
+                                Drag and drop your images here
+                                or click to browse.
+
+                            </p>
+
+
+                            <span>
+
+                                PNG, JPG or WEBP · Maximum 5 MB
+
+                            </span>
+
+
+                            <button type="button"
+                                    class="browse-btn">
+
+                                Browse Files
+
+                            </button>
+
+
+                        </label>
+
+
+                    </section>
+
+
+                </div>
+
+
+
+                <!-- =========================
+                     RIGHT SIDE
+                ========================== -->
+
+                <aside class="form-right">
+
+
+                    <!-- =========================
+                         LOCATION
+                    ========================== -->
+
+                    <section class="form-card location-card">
+
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">
+                                📍
+                            </div>
+
+
+                            <div>
+
+                                <h2>
+                                    Farm Location
+                                </h2>
+
+                                <p>
+                                    Help buyers find your produce.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- STATE -->
+
+                        <div class="form-group">
+
+                            <label for="state">
+
+                                State
+                                <span>*</span>
+
+                            </label>
+
+
+                            <select id="state">
+
+                                <option>
+                                    Select State
+                                </option>
+
+                                <option>
+                                    Uttarakhand
+                                </option>
+
+                                <option>
+                                    Uttar Pradesh
+                                </option>
+
+                                <option>
+                                    Haryana
+                                </option>
+
+                                <option>
+                                    Punjab
+                                </option>
+
+                                <option>
+                                    Rajasthan
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- DISTRICT -->
+
+                        <div class="form-group">
+
+                            <label for="district">
+
+                                District
+                                <span>*</span>
+
+                            </label>
+
+
+                            <input type="text"
+                                   id="district"
+                                   placeholder="Enter your district">
+
+                        </div>
+
+
+
+                        <!-- VILLAGE -->
+
+                        <div class="form-group">
+
+                            <label for="village">
+
+                                Village / Area
+
+                            </label>
+
+
+                            <input type="text"
+                                   id="village"
+                                   placeholder="Enter village or area">
+
+                        </div>
+
+
+                        <div class="location-info">
+
+                            <span>
+                                🔒
+                            </span>
+
+
+                            <p>
+
+                                Your exact address will not be
+                                publicly displayed.
+
+                            </p>
+
+                        </div>
+
+
+                    </section>
+
+
+
+                    <!-- =========================
+                         SELLING PREFERENCE
+                    ========================== -->
+
+                    <section class="form-card preference-card">
+
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">
+                                🤝
+                            </div>
+
+
+                            <div>
+
+                                <h2>
+                                    Selling Preference
+                                </h2>
+
+                                <p>
+                                    Choose your preferred buyers.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <label class="check-option">
+
+                            <input type="checkbox"
+                                   checked>
+
+                            <div>
+
+                                <strong>
+                                    Individual Buyers
+                                </strong>
+
+                                <p>
+                                    Sell directly to consumers.
+                                </p>
+
+                            </div>
+
+                        </label>
+
+
+
+                        <label class="check-option">
+
+                            <input type="checkbox"
+                                   checked>
+
+                            <div>
+
+                                <strong>
+                                    Retailers & Shops
+                                </strong>
+
+                                <p>
+                                    Connect with local businesses.
+                                </p>
+
+                            </div>
+
+                        </label>
+
+
+
+                        <label class="check-option">
+
+                            <input type="checkbox">
+
+                            <div>
+
+                                <strong>
+                                    Bulk Buyers
+                                </strong>
+
+                                <p>
+                                    Sell larger quantities.
+                                </p>
+
+                            </div>
+
+                        </label>
+
+
+                    </section>
+
+
+
+                    <!-- =========================
+                         TIPS
+                    ========================== -->
+
+                    <div class="tips-card">
+
+                        <div class="tips-icon">
+                            💡
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                Tips for Better Listings
+                            </h3>
+
+
+                            <ul>
+
+                                <li>
+                                    Add clear product images.
+                                </li>
+
+                                <li>
+                                    Keep your quantity updated.
+                                </li>
+
+                                <li>
+                                    Set a competitive price.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                </aside>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 FORM ACTIONS
+            ========================== -->
+
+            <div class="form-actions">
+
+
+                <a href="farmer-dashboard.html"
+                   class="cancel-btn">
+
+                    Cancel
+
+                </a>
+
+
+                <div class="action-right">
+
+                    <button type="button"
+                            class="draft-btn">
+
+                        Save as Draft
+
+                    </button>
+
+
+                    <button type="submit"
+                            class="publish-btn">
+
+                        Publish Product
+                        <span>→</span>
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+        </form>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                © 2026 FarmSetu · Empowering Farmers Through Direct Markets
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+</body>
+
+</html>

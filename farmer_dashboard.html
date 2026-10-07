@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farmer Dashboard | FarmSetu</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="farmer_dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         DASHBOARD WRAPPER
+    ========================== -->
+
+    <div class="dashboard-container">
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html"
+               class="logo">
+
+                <div class="logo-icon">
+                    🌱
+                </div>
+
+
+                <div class="logo-text">
+
+                    <h2>FarmSetu</h2>
+
+                    <p>Farmer Portal</p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- MENU -->
+
+            <div class="menu">
+
+
+                <p class="menu-title">
+                    MENU
+                </p>
+
+
+                <a href="#"
+                   class="menu-item active">
+
+                    <span class="menu-icon">
+                        🏠
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a href="my-products.html"
+                   class="menu-item">
+
+                    <span class="menu-icon">
+                        📦
+                    </span>
+
+                    My Products
+
+                </a>
+
+
+                <a href="add-product.html"
+                   class="menu-item">
+
+                    <span class="menu-icon">
+                        ➕
+                    </span>
+
+                    Add Product
+
+                </a>
+
+
+                <a href="orders.html"
+                   class="menu-item">
+
+                    <span class="menu-icon">
+                        📋
+                    </span>
+
+                    Orders
+
+                    <span class="notification">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a href="#price"
+                   class="menu-item">
+
+                    <span class="menu-icon">
+                        📊
+                    </span>
+
+                    Price Insights
+
+                </a>
+
+
+
+                <p class="menu-title second-title">
+                    ACCOUNT
+                </p>
+
+
+                <a href="#profile"
+                   class="menu-item">
+
+                    <span class="menu-icon">
+                        👤
+                    </span>
+
+                    My Profile
+
+                </a>
+
+
+                <a href="index.html"
+                   class="menu-item logout">
+
+                    <span class="menu-icon">
+                        ↪
+                    </span>
+
+                    Logout
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="sidebar-help">
+
+                <span>
+                    💡
+                </span>
+
+                <div>
+
+                    <h4>
+                        Need Help?
+                    </h4>
+
+                    <p>
+                        Contact FarmSetu support.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =========================
+             MAIN AREA
+        ========================== -->
+
+        <main class="main-content">
+
+
+            <!-- =========================
+                 TOP HEADER
+            ========================== -->
+
+            <header class="top-header">
+
+
+                <!-- Welcome Text -->
+
+                <div class="welcome">
+
+                    <!-- <p>
+                        THURSDAY, AUGUST 27
+                    </p> -->
+
+                    <h1 id="greeting">
+                        Hello, Rajesh 👋
+                    </h1>
+
+                    <span>
+                        Here's what's happening with your farm today.
+                    </span>
+
+                </div>
+
+
+
+                <!-- Right Header -->
+
+                <div class="header-actions">
+
+
+                    <!-- Notification -->
+
+                    <button class="notification-btn">
+
+                        🔔
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+
+                    <!-- Profile -->
+
+                    <div class="header-profile">
+
+                        <div class="profile-image">
+                            👨‍🌾
+                        </div>
+
+
+                        <div class="profile-info">
+
+                            <h4 id="profile-name">
+                                Rajesh Kumar
+                            </h4>
+
+                            <p>
+                                Verified Farmer
+                            </p>
+
+                        </div>
+
+
+                        <span class="profile-arrow">
+                            ▾
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =========================
+                 QUICK STATS
+            ========================== -->
+
+            <section class="stats-section">
+
+
+                <!-- STAT 1 -->
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <p>
+                            TOTAL PRODUCTS
+                        </p>
+
+                        <div class="stat-icon green">
+                            📦
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                        12
+                    </h2>
+
+
+                    <span class="positive">
+
+                        ↑ 2 added this month
+
+                    </span>
+
+                </div>
+
+
+
+                <!-- STAT 2 -->
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <p>
+                            ACTIVE ORDERS
+                        </p>
+
+                        <div class="stat-icon orange">
+                            📋
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                        08
+                    </h2>
+
+
+                    <span class="positive">
+
+                        ↑ 3 new requests
+
+                    </span>
+
+                </div>
+
+
+
+                <!-- STAT 3 -->
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <p>
+                            TOTAL EARNINGS
+                        </p>
+
+                        <div class="stat-icon gold">
+                            ₹
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                        ₹45,200
+                    </h2>
+
+
+                    <span class="positive">
+
+                        ↑ 12% from last month
+
+                    </span>
+
+                </div>
+
+
+
+                <!-- STAT 4 -->
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <p>
+                            PROFILE VIEWS
+                        </p>
+
+                        <div class="stat-icon blue">
+                            👁
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                        128
+                    </h2>
+
+
+                    <span class="positive">
+
+                        ↑ 18% this week
+
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 MAIN GRID
+            ========================== -->
+
+            <div class="content-grid">
+
+
+                <!-- LEFT SIDE -->
+
+                <div class="left-content">
+
+
+                    <!-- =========================
+                         MY PRODUCTS
+                    ========================== -->
+
+                    <section class="products-section"
+                             id="products">
+
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <p class="section-label">
+                                    YOUR LISTINGS
+                                </p>
+
+                                <h2>
+                                    My Products
+                                </h2>
+
+                            </div>
+
+
+                            <a href="add-product.html"
+                               class="add-btn">
+
+                                + Add Product
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT LIST -->
+
+                        <div class="product-list">
+
+
+                            <!-- PRODUCT 1 -->
+
+                            <div class="dashboard-product">
+
+                                <img src="Images/tomatoes.jpeg"
+                                     alt="Tomatoes">
+
+
+                                <div class="product-info">
+
+                                    <h3>
+                                        Fresh Organic Tomatoes
+                                    </h3>
+
+                                    <p>
+                                        Vegetables · 500 kg available
+                                    </p>
+
+                                </div>
+
+
+                                <div class="product-price">
+
+                                    <strong>
+                                        ₹30/kg
+                                    </strong>
+
+                                    <span>
+                                        Active
+                                    </span>
+
+                                </div>
+
+
+                                <button class="more-btn">
+                                    ⋮
+                                </button>
+
+                            </div>
+
+
+
+                            <!-- PRODUCT 2 -->
+
+                            <div class="dashboard-product">
+
+                                <img src="Images/potatoes.jpeg"
+                                     alt="Potatoes">
+
+
+                                <div class="product-info">
+
+                                    <h3>
+                                        Fresh Potatoes
+                                    </h3>
+
+                                    <p>
+                                        Vegetables · 750 kg available
+                                    </p>
+
+                                </div>
+
+
+                                <div class="product-price">
+
+                                    <strong>
+                                        ₹25/kg
+                                    </strong>
+
+                                    <span>
+                                        Active
+                                    </span>
+
+                                </div>
+
+
+                                <button class="more-btn">
+                                    ⋮
+                                </button>
+
+                            </div>
+
+
+
+                            <!-- PRODUCT 3 -->
+
+                            <div class="dashboard-product">
+
+                                <img src="Images/wheat.jpeg"
+                                     alt="Wheat">
+
+
+                                <div class="product-info">
+
+                                    <h3>
+                                        Premium Wheat
+                                    </h3>
+
+                                    <p>
+                                        Grains · 1200 kg available
+                                    </p>
+
+                                </div>
+
+
+                                <div class="product-price">
+
+                                    <strong>
+                                        ₹28/kg
+                                    </strong>
+
+                                    <span>
+                                        Active
+                                    </span>
+
+                                </div>
+
+
+                                <button class="more-btn">
+                                    ⋮
+                                </button>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <a href="#"
+                           class="view-all">
+
+                            View All Products →
+
+                        </a>
+
+
+                    </section>
+
+
+
+                    <!-- =========================
+                         RECENT ORDERS
+                    ========================== -->
+
+                    <section class="orders-section"
+                             id="orders">
+
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <p class="section-label">
+                                    BUYER REQUESTS
+                                </p>
+
+                                <h2>
+                                    Recent Orders
+                                </h2>
+
+                            </div>
+
+
+                            <a href="buyer-requests.html"
+                               class="view-link">
+
+                                View All →
+
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="orders-list">
+
+
+                            <!-- ORDER 1 -->
+
+                            <div class="order-item">
+
+                                <div class="buyer-avatar">
+                                    A
+                                </div>
+
+
+                                <div class="order-info">
+
+                                    <h3>
+                                        Aman Traders
+                                    </h3>
+
+                                    <p>
+                                        200 kg Fresh Tomatoes
+                                    </p>
+
+                                </div>
+
+
+                                <div class="order-status">
+
+                                    <strong>
+                                        ₹6,000
+                                    </strong>
+
+                                    <span class="pending">
+                                        Pending
+                                    </span>
+
+                                </div>
+
+
+                                <button class="accept-btn">
+                                    Review
+                                </button>
+
+                            </div>
+
+
+
+                            <!-- ORDER 2 -->
+
+                            <div class="order-item">
+
+                                <div class="buyer-avatar">
+                                    S
+                                </div>
+
+
+                                <div class="order-info">
+
+                                    <h3>
+                                        Sharma Fresh Mart
+                                    </h3>
+
+                                    <p>
+                                        300 kg Fresh Potatoes
+                                    </p>
+
+                                </div>
+
+
+                                <div class="order-status">
+
+                                    <strong>
+                                        ₹7,500
+                                    </strong>
+
+                                    <span class="confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </div>
+
+
+                                <button class="accept-btn">
+                                    View
+                                </button>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+
+                </div>
+
+
+
+                <!-- =========================
+                     RIGHT SIDE
+                ========================== -->
+
+                <div class="right-content">
+
+
+                    <!-- =========================
+                         QUICK ACTIONS
+                    ========================== -->
+
+                    <section class="quick-actions">
+
+
+                        <p class="section-label">
+                            QUICK ACTIONS
+                        </p>
+
+                        <h2>
+                            Manage Your Farm
+                        </h2>
+
+
+                        <a href="add-product.html"
+                           class="quick-action-card">
+
+                            <span class="quick-icon">
+                                ➕
+                            </span>
+
+
+                            <div>
+
+                                <h3>
+                                    Add New Product
+                                </h3>
+
+                                <p>
+                                    List your fresh produce
+                                </p>
+
+                            </div>
+
+
+                            <span class="quick-arrow">
+                                →
+                            </span>
+
+                        </a>
+
+
+
+                        <a href="#orders"
+                           class="quick-action-card">
+
+                            <span class="quick-icon">
+                                📋
+                            </span>
+
+
+                            <div>
+
+                                <h3>
+                                    Review Orders
+                                </h3>
+
+                                <p>
+                                    You have 3 new requests
+                                </p>
+
+                            </div>
+
+
+                            <span class="quick-arrow">
+                                →
+                            </span>
+
+                        </a>
+
+
+                    </section>
+
+
+
+                    <!-- =========================
+                         PRICE INSIGHTS
+                    ========================== -->
+
+                    <section class="price-card"
+                             id="price">
+
+
+                        <div class="price-header">
+
+                            <div>
+
+                                <p class="section-label">
+                                    MARKET UPDATE
+                                </p>
+
+                                <h2>
+                                    Price Insights
+                                </h2>
+
+                            </div>
+
+
+                            <span>
+                                📊
+                            </span>
+
+                        </div>
+
+
+                        <div class="market-product">
+
+                            <div class="market-name">
+
+                                <span>
+                                    🍅
+                                </span>
+
+                                <p>
+                                    Tomatoes
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    ₹32/kg
+                                </strong>
+
+                                <span class="up">
+                                    ↑ 6%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="market-product">
+
+                            <div class="market-name">
+
+                                <span>
+                                    🥔
+                                </span>
+
+                                <p>
+                                    Potatoes
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    ₹24/kg
+                                </strong>
+
+                                <span class="down">
+                                    ↓ 2%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="market-product">
+
+                            <div class="market-name">
+
+                                <span>
+                                    🌾
+                                </span>
+
+                                <p>
+                                    Wheat
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    ₹30/kg
+                                </strong>
+
+                                <span class="up">
+                                    ↑ 4%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="#"
+                           class="insight-link">
+
+                            View Detailed Insights →
+
+                        </a>
+
+
+                    </section>
+
+
+
+                    <!-- =========================
+                         PROFILE COMPLETION
+                    ========================== -->
+
+                    <section class="profile-completion"
+                             id="profile">
+
+
+                        <div class="completion-header">
+
+                            <div>
+
+                                <p class="section-label">
+                                    YOUR PROFILE
+                                </p>
+
+                                <h2>
+                                    Almost Complete!
+                                </h2>
+
+                            </div>
+
+
+                            <strong>
+                                85%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="progress-bar">
+
+                            <div class="progress"></div>
+
+                        </div>
+
+
+                        <p>
+
+                            Add your farm details and verification
+                            documents to complete your profile.
+
+                        </p>
+
+
+                        <a href="#">
+
+                            Complete Profile →
+
+                        </a>
+
+
+                    </section>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =========================
+                 FOOTER
+            ========================== -->
+
+            <footer>
+
+                <p>
+                    © 2026 FarmSetu · Farmer Dashboard
+                </p>
+
+                <div>
+
+                    <a href="#">
+                        Help
+                    </a>
+
+                    <a href="#">
+                        Privacy
+                    </a>
+
+                    <a href="#">
+                        Terms
+                    </a>
+
+                </div>
+
+            </footer>
+
+
+        </main>
+
+
+    </div>
+
+
+</body>
+<script src="farmer-dashboard.js" type="module"></script>
+
+</html>
